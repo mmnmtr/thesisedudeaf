@@ -33,9 +33,9 @@
                     </div>
                     <div class="col-12 col-md-8">
                         <div class="row">
-                            <div class="col-md-4 text-center menuItem">
+                            <div class="col-md-4 text-center menuItem" id="p1">
                                 <img src="img/menu_giraffe.png"  alt="">
-                                <a href="#" class="btn menuCate" role="button">หมวดหมู่คำศัพท์</a>
+                                <a  href="#" class="btn menuCate" role="button">หมวดหมู่คำศัพท์</a>
                             </div>
                             <div class="col-md-4 text-center menuItem">
                                 <img src="img/menu_rabbit.png"  alt="">

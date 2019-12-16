@@ -19,8 +19,8 @@ Route::get('/logout','LoginController@logout')->name('logout');
 
 //Route::get('/cate','CategoriesController@index');
 Route::get('/categories','CategoriesController@index');
-Route::get('/categories/create','CategoriesController@create');
-Route::get('/categories/{id}','CategoriesController@show');
+Route::get('/create/category','CategoriesController@create');
+Route::get('/{id}/allvocabularies/{category_name}','CategoriesController@show');
 Route::get('/categories/{id}/edit','CategoriesController@edit');
 Route::put('/categories/{id}','CategoriesController@update');
 Route::post('/categories/store','CategoriesController@store');

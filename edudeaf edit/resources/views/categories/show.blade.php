@@ -29,7 +29,6 @@
                     <th scope="col">#</th>
                     <th scope="col">คำศัพท์ </th>
                     <th scope="col" style="text-align: center">รูปภาพ</th>
-                    <th scope="col" style="text-align: center">ชนิดของคำ </th>
                     <th scope="col" style="text-align: center">วิดีโอภาษามือ</th>
                     <th scope="col" style="text-align: center">Action</th>
 
@@ -45,9 +44,8 @@
                                 {{--<img class="img-responsive" alt="" src="/uploads/photos/{{ $photo->photo }}" />--}}
                                 <img src="/uploads/vocabularies/{{$vocabulary->category_id}}/{{$vocabulary->vocab_photo}}" class="card-img-top" alt="">
                             </td>
-                            <td width="20%" style="text-align: center">คำนาม</td>
 
-                            <td width="20%" style="text-align: center">
+                            <td width="20%" class="videoAnimate" style="text-align: center">
                                 <video id="my-video" class="video-js" controls preload="auto" width="100%" height="auto" data-setup="{}">
                                     <source src="/uploads/vocabularies/{{$vocabulary->category_id}}/{{$vocabulary->vocab_video}}" type='video/mp4'>
                                 </video>
@@ -56,7 +54,7 @@
                                 <form action="/vocabularies/{{$vocabulary->id}}" method="post">
                                     {{csrf_field()}}
                                     <input type="hidden" name="_method" value="DELETE">
-                                    <button class="btn btn-danger">delete</button>
+                                    <button class="btn btn-Red"><i class="fas fa-trash-alt"></i></button>
                                 </form>
                             </td>
 

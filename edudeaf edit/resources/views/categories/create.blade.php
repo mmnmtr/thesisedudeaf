@@ -15,7 +15,7 @@
 
     <div class="categories_list">
         <div class="col-md-12">
-            <div class="col col-md-8 offset-2">
+            <div class="col col-md-12">
                 <form method="POST" action="/categories/store" enctype="multipart/form-data">
                     {{csrf_field()}}
                     <div class="form-group">

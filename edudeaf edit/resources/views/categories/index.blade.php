@@ -9,7 +9,7 @@
                     </div>
                     <div class="createCate col-md-3">
                         <button class="btn btn-create">
-                            <a href="/categories/create">
+                            <a href="/create/category">
                                 <i class="fas fa-plus-circle "></i>
                                 เพิ่มหมวดหมู่คำศัพท์
                             </a>
@@ -45,13 +45,12 @@
                                         <td width="25%" style="text-align: center">
                                             <form action="/categories/{{$category->id}}" method="post">
                                                 {{csrf_field()}}
+                                                <a href="/categories/{{$category->id}}/edit" class="btn btn-Edit mr-1"> <i class="fas fa-edit"></i></a>
                                                 <input type="hidden" name="_method" value="DELETE">
-                                                <button class="btn btn-danger">delete</button>
-                                                
-                                                <a href="/categories/{{$category->id}}/edit" class="btn btn-info mr-1"> <i class="fas fa-edit"></i> edit</a>
+                                                <button class="btn btn-Red"><i class="fas fa-trash-alt"></i></button>
                                             </form>
                                         </td>
-                                        <td width="20%" style="text-align: center"><button><a href="/categories/{{$category->id}}">ดูคำศัพท์</a></button></td>
+                                        <td width="20%" style="text-align: center"><a href="/{{$category->id}}/allvocabularies/{{$category->category_name}}"><button class="btn btn-More"><i class="fas fa-clipboard-list"></i> ดูคำศัพท์</button></a></td>
                                     </tr>
                                 </tbody>
                             @endforeach

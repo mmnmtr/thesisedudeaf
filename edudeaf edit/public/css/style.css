@@ -8,11 +8,21 @@
     url('/../fonts/nattanan_tsl_fingerspelling-webfont.svg#nattanan_tsl_fingerspellingRg') format('svg');
     font-weight: normal;
     font-style: normal;
-
+}
+a {
+    text-decoration: none!important;
 }
 .drag {
     font-family: 'nattanan_tsl_fingerspellingRg';
-    font-size: 40px;
+    -webkit-text-stroke: 1px #000000;
+    font-size: 95px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.3;
+    letter-spacing: 2.79px;
+    text-align: left;
+    color: #393939;
 }
 html{
     position: relative;
@@ -245,7 +255,6 @@ body{
     color: #3078ff;
     float: left;
 }
-
 .circke-blue {
     width: 20px;
     height: 20px;
@@ -255,6 +264,9 @@ body{
     border: solid 4px #3078ff;
     margin-top: 15px;
     margin-right: 20px;
+}
+.videoAnimate video {
+    vertical-align: middle;
 }
 .btn-create {
     width: 100%;
@@ -295,6 +307,12 @@ table td, .table th {
     width: 100%;
     height: auto;
     float: left;
+    font-family: 'Bai Jamjuree';
+    color: #26335e;
+    font-size: 20px;
+}
+.categories_list th {
+    font-weight: bold;
 }
 
 .list td img {
@@ -314,6 +332,17 @@ table td, .table th {
     font-size: 20px;
     font-weight: 600;
     color: #b2b2b2;
+}
+.createSign {
+    width: 100%;
+    height: 200px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.16);
+    background-color: #ffffff;
+    font-size: 20px;
+    font-weight: 600;
+    color: #b2b2b2;
+    pointer-events: none;
 }
 .btnFile {
     border: 2px solid gray;
@@ -344,7 +373,8 @@ table td, .table th {
     margin-top: 115px;
 }
 .categoryTitle {
-    font-size: 24px;
+    font-family: 'Bai Jamjuree', sans-serif;
+    font-size: 28px;
     font-weight: bold;
     color: #26335e;
 }
@@ -370,4 +400,50 @@ table td, .table th {
     box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.16);
     border: solid 1px #e86371;
     background-color: #ffffff;
+}
+.btn-Edit {
+    width: 50px;
+    height: 50px;
+    color: #ffffff;
+    border-radius: 50%;
+    box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
+    background-color: #3078ff;
+}
+.btn-Edit i {
+    margin: auto;
+    padding: 8px 0 8px 0;
+}
+.btn-Edit:hover,.btn-Edit i:hover{
+    color: #ffffff;
+    margin: auto;
+    /*padding: 8px 0 8px 0;*/
+}
+
+.btn-Red {
+    width: 50px;
+    height: 50px;
+    color: #ffffff;
+    border-radius: 50%;
+    box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
+    background-color: #e86371;
+}
+.btn-More {
+    width: 150px;
+    height: 50px;
+    font-size: 16px;
+    font-weight: 600;
+    border-radius: 100px;
+    border: solid 1px #c6ccd8;
+    background-color: #ffffff;
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    border-radius: 50px;
+}
+.btn-More {
+    color: #abb1bc;
+}
+.btn-More:hover {
+    border: solid 1px #c6ccd8;
+    background-color: #3078ff;
+    color: #ffffff;
 }

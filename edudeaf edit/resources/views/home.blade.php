@@ -43,7 +43,7 @@
     </div>
 </div>
 
-<div class="site">
+<div class="site" id="p1">
     <div class="func1">
         <img src="/../img/bg_category.jpg" alt="">
         <div class="container">
