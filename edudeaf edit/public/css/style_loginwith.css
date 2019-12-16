@@ -1,0 +1,68 @@
+body {
+    font-family: 'Kodchasan', sans-serif;
+    background-color: #FCFBF5;
+    background-image: url("../img/bg_camp.png");
+    background-repeat : no-repeat;
+    background-position: left 245px;
+    background-size: 100% auto;
+}
+
+@media (min-width: 1200px) {
+    .container {
+        max-width: 1640px;
+    }
+}
+.function {
+    padding-top: 170px;
+}
+.header {
+    height: 168px;
+    width: 100%;
+    position: fixed;
+    z-index: 1;
+}
+.navbar-brand {
+    width: 100%;
+    padding-top: 1.3125rem !important;
+    padding-bottom: .3125rem !important;
+
+}
+.navbar-brand img {
+    width: 120%;
+    height: auto;
+    margin-left: -60px;
+    margin-top: 10px;
+}
+.bandner {
+    padding-top: 435px;
+}
+.bandnerRight {
+    padding-left: -50px;
+}
+.logoLogin img {
+    width: 105%;
+    height: auto;
+}
+.logoLogin h1 {
+    text-align: center;
+    font-size: 55px;
+    font-weight: bold;
+    color: #453324;
+    margin-top: -30%;
+}
+.bandner p {
+    font-size: 28px;
+    font-weight: bold;
+    color: #393939;
+    margin-top: -10%;
+}
+.logoLoginPhoto img {
+    width: 100%;
+    height: auto;
+}
+.logoLoginPhoto h1 {
+    color: #ffffff;
+    font-size: 45px;
+    font-weight: bold;
+    margin-top: -30%;
+}
