@@ -28,10 +28,9 @@
             <div class="row">
                 <div class="col-12 col-md-6 bandnerLeft ">
                     <img src="img/logo_edudeaf.png" alt="">
-                    <p>
-                        {{--Lorem ipsum is placeholder text commonly--}}
-                        {{--used in the graphic, print, and publishing--}}
-                        {{--industries for previewing layouts.--}}
+                    <p>Lorem ipsum is placeholder text commonly
+                        used in the graphic, print, and publishing
+                        industries for previewing layouts.
                     </p>
 
                 </div>
