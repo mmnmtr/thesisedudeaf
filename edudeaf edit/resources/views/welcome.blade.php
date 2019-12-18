@@ -9,7 +9,7 @@
                     </p>
                     <div class="row">
                         <div class="col-md-6 text-center">
-                            <a href="/student-home"  class="logoLoginPhoto">
+                            <a href="/"  class="logoLoginPhoto">
                                 <img src="/../img/student-02.png" alt="">
                                 <h1>นักเรียน</h1>
                             </a>

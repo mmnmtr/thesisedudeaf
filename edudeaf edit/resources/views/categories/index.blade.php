@@ -9,7 +9,7 @@
                     </div>
                     <div class="createCate col-md-3">
                         <button class="btn btn-create">
-                            <a href="/create/category">
+                            <a href="/categories/create">
                                 <i class="fas fa-plus-circle "></i>
                                 เพิ่มหมวดหมู่คำศัพท์
                             </a>
@@ -50,7 +50,7 @@
                                                 <button class="btn btn-Red"><i class="fas fa-trash-alt"></i></button>
                                             </form>
                                         </td>
-                                        <td width="20%" style="text-align: center"><a href="/{{$category->id}}/allvocabularies/{{$category->category_name}}"><button class="btn btn-More"><i class="fas fa-clipboard-list"></i> ดูคำศัพท์</button></a></td>
+                                        <td width="20%" style="text-align: center"><a href="/categories/{{$category->id}}}"><button class="btn btn-More"><i class="fas fa-clipboard-list"></i> ดูคำศัพท์</button></a></td>
                                     </tr>
                                 </tbody>
                             @endforeach

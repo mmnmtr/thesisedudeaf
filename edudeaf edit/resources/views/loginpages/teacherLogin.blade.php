@@ -30,7 +30,8 @@
                             </form>
                         </div>
                         <div class="col text-center">
-                            <button type="submit" class="btn btn-login text-center">เข้าสู่ระบบ</button>
+                            <a href="/categories">
+                                <button type="submit" class="btn btn-login text-center">เข้าสู่ระบบ</button></a>
                         </div>
                     </div>
                 </div>

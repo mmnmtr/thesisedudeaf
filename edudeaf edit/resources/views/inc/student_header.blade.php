@@ -26,7 +26,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col-12 col-md-2">
-                        <a class="navbar-brand" href="/student-home">
+                        <a class="navbar-brand" href="/user">
                             <img src="/../img/logo_edudeaf.png" alt="">
                         </a>
 
