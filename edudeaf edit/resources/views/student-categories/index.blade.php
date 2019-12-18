@@ -38,6 +38,15 @@
                     </div>
                 </div>
             </div>
+            <div class="return">
+                <div class="col-md-12">
+                    <div class="text-center">
+                        <a href="/student">
+                            <button class="btn btn-Stdback"><h2><i class="fas fa-redo-alt"></i> ย้อนกลับ</h2></button>
+                        </a>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 @endsection

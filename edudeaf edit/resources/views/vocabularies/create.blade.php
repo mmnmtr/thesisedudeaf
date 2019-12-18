@@ -5,7 +5,7 @@
             <div class="functitle col col-md-12">
                 <div class="row">
                     <div class="col col-md-9">
-                        <span><div class="circke-blue"></div></span> <h1>  เพิ่มหมวดหมู่คำศัพท์</h1>
+                        <span><div class="circke-blue"></div></span> <h1>  เพิ่มคำศัพท์หมวดหมู่ </h1>
                     </div>
                 </div>
             </div>
@@ -25,10 +25,10 @@
                             </div>
                         </div>
                         <div class="form-group">
-                            {{--<label for="due" class="padding40 categoryTitle control-label">| รูปภาพประกอบ</label>--}}
-                            {{--<div class="padding40">--}}
-                                {{--<input class="createInput form-control" name="vocab_photo" type="file">--}}
-                            {{--</div>--}}
+                            <label for="due" class="padding40 categoryTitle control-label">| รูปภาพประกอบหน้าปก (ภาพการ์ตูน)</label>
+                            <div class="padding40">
+                                <input class="createInput form-control" name="vocab_photo" type="file">
+                            </div>
                         </div>
                     </div>
                     <div class="col col-md-6">
@@ -60,7 +60,7 @@
                         <div class="form-group">
                             <label for="due" class="padding40 categoryTitle control-label">| รูปภาพประกอบ</label>
                             <div class="padding40">
-                                <input class="createInput form-control" name="vocab_photo" type="file">
+                                <input class="createInput form-control" name="vocab_photoReal" type="file">
                             </div>
                         </div>
                     </div>

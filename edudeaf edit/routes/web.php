@@ -29,6 +29,8 @@ Route::delete('/categories/{id}','CategoriesController@destroy');
 Route::get('/vocabularies/create/{id}','VocabulariesController@create');
 Route::post('/vocabularies/store','VocabulariesController@store');
 Route::get('/vocabularies/{id}','VocabulariesController@show');
+Route::put('/vocabularies/{category_id}','VocabulariesController@update');
+Route::get('/vocabularies/{id}/edit','VocabulariesController@edit');
 Route::delete('/vocabularies/{id}','VocabulariesController@destroy');
 
 Route::get('/student','StudentCaegoriesController@index');

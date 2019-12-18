@@ -21,7 +21,7 @@
                 {{--@foreach($albums as $album)--}}
             <div class="categories_list">
                 <div class="col-md-12">
-                    <table class="table">
+                    <table class="table number">
                         <thead>
                         <tr>
                             <th scope="col">#</th>
@@ -38,7 +38,7 @@
                                 <tbody class="list">
                                     <tr>
                                         {{--{{$category->id}}--}}
-                                        <th scope="row"></th>
+                                        <td scope="row" class="count"></td>
                                         <td width="15%" >{{$category->category_name}}</td>
                                         <td width="25%" style="text-align: center"><img src="uploads/catergorie_covers/{{$category->category_image}}"></td>
                                         <td width="20%" style="text-align: center">{{$category->count}}</td>
@@ -50,7 +50,7 @@
                                                 <button class="btn btn-Red"><i class="fas fa-trash-alt"></i></button>
                                             </form>
                                         </td>
-                                        <td width="20%" style="text-align: center"><a href="/categories/{{$category->id}}}"><button class="btn btn-More"><i class="fas fa-clipboard-list"></i> ดูคำศัพท์</button></a></td>
+                                        <td width="20%" style="text-align: center"><a href="/categories/{{$category->id}}"><button class="btn btn-More"><i class="fas fa-clipboard-list"></i> ดูคำศัพท์</button></a></td>
                                     </tr>
                                 </tbody>
                             @endforeach

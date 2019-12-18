@@ -18,6 +18,7 @@ class CreateVocabulariesTable extends Migration
             $table->integer('category_id');
             $table->string('vocab_word');
             $table->string('vocab_photo');
+            $table->string('vocab_photoReal');
             $table->string('vocab_video');
             $table->timestamps();
         });

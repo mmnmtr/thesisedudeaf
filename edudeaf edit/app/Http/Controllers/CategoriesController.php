@@ -21,6 +21,7 @@ class CategoriesController extends Controller
             ->groupBy('categories.category_image')
             ->groupBy('categories.id')
             ->groupBy('vocabularies.category_id')
+            ->orderBy('categories.id', 'asc')
             ->get();
 
         return view('categories.index',compact('categories'));
@@ -73,14 +74,26 @@ class CategoriesController extends Controller
     public function update(Request $request, $id)
     {
         $this->validate($request,[
-            'category_name'=>'required'
+            'category_name'=>'required',
+//            'category_image'=>'image|max:1999'
         ]);
+//        $filenameWithExtNew = $request->file('category_image')->getClientOriginalName();
+//        $filename = pathinfo($filenameWithExtNew,PATHINFO_FILENAME);
+//
+//        $extension = $request->file('category_image')->getClientOriginalName();
+//
+//        //create new file name
+//        $filenameToStore = Date('YmdHis').'_'.$extension;
+//
+//        //upload
+//        $request->file('category_image')->move('uploads/catergorie_covers',$filenameToStore);
 
         $category = Category::find($id);
         $category->category_name = $request->input('category_name');
+//        $category->category_image = $filenameToStore;
         $category->save();
 
-        return redirect('/categories')->with('success','update');
+        return redirect('/categories')->with('success','แก้ไขเรียบร้อย');
 
     }
 

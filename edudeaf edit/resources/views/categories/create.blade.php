@@ -35,9 +35,9 @@
                             <button type="submit" class="btn btn-createCate"><i class="fas fa-plus-circle"></i> เพิ่มหมวดหมู่คำศัพท์</button>
                         </div>
                         <div class="col-md-5">
-                            <button>
+
                                 <a class="btn btn-teachBack" href="/categories"><i class="fas fa-times-circle"></i> ยกเลิก</a>
-                            </button>
+
                             {{--<a href="/categories"><button class="btn-teachBack"><i class="fas fa-times-circle"></i> ยกเลิก</button></a>--}}
                         </div>
                     </div>

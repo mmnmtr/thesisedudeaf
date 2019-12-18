@@ -18,17 +18,14 @@ class VocabulariesController extends Controller
         $this->validate($request,[
             'vocab_word'=>'required',
             'vocab_photo'=> 'required|image|mimes:jpeg,png,jpg,gif,svg|max:2048',
+            'vocab_photoReal'=> 'required|image|mimes:jpeg,png,jpg,gif,svg|max:2048',
             'vocab_video' => 'required|mimes:mp4,ogx,oga,ogv,ogg,webm',
         ]);
 
 
         $filenameWithExt = $request->file('vocab_video')->getClientOriginalName();
-
-
         $filename = pathinfo($filenameWithExt,PATHINFO_FILENAME);
-
         $extension = $request->file('vocab_video')->getClientOriginalName();
-
         //create new file name
         //$filenameToStore = $filename.'_'.time().'.'.$extension;
         $filenameToStore = Date('YmdHis').'_'.$extension;
@@ -48,16 +45,49 @@ class VocabulariesController extends Controller
         //upload
         $request->file('vocab_photo')->move('uploads/vocabularies/'. $request->input('category_id'),$filenameToStorePhoto);
 
+        // photoReal
+        $filenameWithExt = $request->file('vocab_photoReal')->getClientOriginalName();
+        $filename = pathinfo($filenameWithExt,PATHINFO_FILENAME);
+        $extension = $request->file('vocab_photoReal')->getClientOriginalName();
+
+        //create new file name
+        //$filenameToStore = $filename.'_'.time().'.'.$extension;
+        $filenameToStorePhotoReal = Date('YmdHis').'_'.$extension;
+        //upload
+        $request->file('vocab_photoReal')->move('uploads/vocabularies/'. $request->input('category_id'),$filenameToStorePhotoReal);
+
+
 
 
         $category = new Vocabulary;
         $category->category_id = $request->input('category_id');
         $category->vocab_word = $request->input('vocab_word');
         $category->vocab_photo = $filenameToStorePhoto;
+        $category->vocab_photoReal = $filenameToStorePhotoReal;
         $category->vocab_video = $filenameToStore;
         $category->save();
 
         return redirect('/categories/'. $request->input('category_id'))->with('success','photo created');
+    }
+    public function edit($id)
+    {
+
+        $vocabulary = Vocabulary::find($id);
+        return view('vocabularies.edit',compact('vocabulary'));
+    }
+
+    public function update(Request $request, $id)
+    {
+        $this->validate($request,[
+            'vocab_word'=>'required',
+        ]);
+
+        $vocabulary = Vocabulary::find($id);
+        $vocabulary->vocab_word = $request->input('vocab_word');
+        $vocabulary->save();
+
+        return redirect('/categories/'.$vocabulary->category_id)->with('success','แก้ไขเรียบร้อย');
+
     }
     public function show($id){
         $vocabulary = Vocabulary::find($id);

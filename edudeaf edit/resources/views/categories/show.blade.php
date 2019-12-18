@@ -23,7 +23,7 @@
 
     <div class="categories_list">
         <div class="col-md-12">
-            <table class="table">
+            <table class="table number">
                 <thead>
                 <tr>
                     <th scope="col">#</th>
@@ -38,7 +38,7 @@
                     @foreach($category->vocabularies as $vocabulary)
                         <tbody class="list">
                         <tr>
-                            <th scope="row">{{$vocabulary->id}}</th>
+                            <td scope="row"></td>
                             <td width="15%" >{{$vocabulary->vocab_word}}</td>
                             <td width="25%" style="text-align: center">
                                 {{--<img class="img-responsive" alt="" src="/uploads/photos/{{ $photo->photo }}" />--}}
@@ -53,6 +53,7 @@
                             <td width="25%" style="text-align: center">
                                 <form action="/vocabularies/{{$vocabulary->id}}" method="post">
                                     {{csrf_field()}}
+                                    <a href="/vocabularies/{{$category->id}}/edit" class="btn btn-Edit mr-1"> <i class="fas fa-edit"></i></a>
                                     <input type="hidden" name="_method" value="DELETE">
                                     <button class="btn btn-Red"><i class="fas fa-trash-alt"></i></button>
                                 </form>
