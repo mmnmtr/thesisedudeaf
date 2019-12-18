@@ -11,7 +11,8 @@
 |
 */
 
-Route::get('/','HomeController@index');
+Route::get('/student-home','HomeController@index');
+
 
 Route::get('/login','LoginController@index')->name('login');
 Route::post('/login','LoginController@login');
@@ -31,16 +32,22 @@ Route::post('/vocabularies/store','VocabulariesController@store');
 Route::get('/vocabularies/{id}','VocabulariesController@show');
 Route::delete('/vocabularies/{id}','VocabulariesController@destroy');
 
-Route::get('/student','StudentCaegoriesController@index');
+Route::get('/student/','StudentCaegoriesController@index');
 Route::get('/student/{id}','StudentCaegoriesController@showvocab');
 
-route::get('/exercises',function () {
+Route::get('/exercises',function () {
     return view('student-exercises.index');
 }) ;
-
-route::get('/user',function () {
+Route::get('/',function () {
     return view('welcome');
 }) ;
+Route::get('/teacher/login',function () {
+    return view('loginpages.teacherLogin');
+}) ;
+
+//Route::get('/student/home',function () {
+//    return view('home');
+//});
 
 
 

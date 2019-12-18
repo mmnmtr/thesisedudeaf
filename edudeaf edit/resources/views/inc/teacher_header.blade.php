@@ -2,7 +2,7 @@
     <nav class="navbar navbar-default no-margin">
         <!-- Brand and toggle get grouped for better mobile display -->
         <div class="navbar-header fixed-brand">
-            <a class="navbar-brand" href="/home"><img src="/../img/logo_edudeaf.png" alt=""></a>
+            <a class="navbar-brand" href="/student-home"><img src="/../img/logo_edudeaf.png" alt=""></a>
             {{--<button type="button" class="navbar-toggle collapsed fixed-left" data-toggle="collapse" id="menu-toggle">--}}
                 {{--<span class="" aria-hidden="true">สววว</span>--}}
             {{--</button>--}}

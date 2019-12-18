@@ -9,13 +9,13 @@
                     </p>
                     <div class="row">
                         <div class="col-md-6 text-center">
-                            <a href="/"  class="logoLoginPhoto">
+                            <a href="/student-home"  class="logoLoginPhoto">
                                 <img src="/../img/student-02.png" alt="">
                                 <h1>นักเรียน</h1>
                             </a>
                         </div>
                         <div class="col-md-6 text-center">
-                            <a href="/categories" class="logoLoginPhoto">
+                            <a href="/teacher/login" class="logoLoginPhoto">
                                 <img src="/../img/teacher-01.png" alt="">
                                 <h1>คุณครู</h1>
                             </a>

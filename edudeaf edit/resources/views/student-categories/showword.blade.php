@@ -66,7 +66,7 @@
                     <div class="return" style="margin-top: 215px;">
                         <div class="col-md-12">
                             <div class="text-center">
-                                <a href="/student">
+                                <a href="/student/{{$vocabulary->category_id}}">
                                     <button class="btn btn-Stdback"><h2><i class="fas fa-redo-alt"></i> ย้อนกลับ</h2></button>
                                 </a>
                             </div>
