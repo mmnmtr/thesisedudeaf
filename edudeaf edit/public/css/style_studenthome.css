@@ -17,7 +17,7 @@ img{
     height: auto;
 }
 .function {
-    padding-top: 170px;
+    padding-top: 150px;
 }
 .header {
     height: 168px;
@@ -27,24 +27,25 @@ img{
 }
 .navbar-brand {
     width: 100%;
-    padding-top: 1.3125rem !important;
-    padding-bottom: .3125rem !important;
+    /*padding-top: 1.3125rem !important;*/
+    /*padding-bottom: .3125rem !important;*/
 
 }
 .navbar-brand img {
-    width: 120%;
+    width: 100%;
     height: auto;
     margin-left: -60px;
-    margin-top: 10px;
+    /*margin-top: 10px;*/
 }
 .navbar-expand-lg {
-    height: 150px;
+    height: 110px;
     background: #FCFBF5;;
     /* */
 }
 .menuItem img {
-    width: 55%;
+    width: 40%;
     height: auto;
+    margin-top: 5px;
 }
 a.menuCate {
     width: 100%;
@@ -57,7 +58,7 @@ a.menuCate {
     border: 6px solid #ffffff;
     padding-top: 7%;
     font-weight: bold;
-    margin-top: -100px;
+    margin-top: -40px;
     box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
 
 }
@@ -72,7 +73,7 @@ a.menuSen {
     border: 6px solid #ffffff;
     padding-top: 7%;
     font-weight: bold;
-    margin-top: -100px;
+    margin-top: -40px;
     box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
 
 }
@@ -87,7 +88,7 @@ a.menuExer {
     border: 6px solid #ffffff;
     padding-top: 7%;
     font-weight: bold;
-    margin-top: -100px;
+    margin-top: -40px;
     box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
 
 }

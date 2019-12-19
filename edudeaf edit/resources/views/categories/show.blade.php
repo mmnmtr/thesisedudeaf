@@ -53,7 +53,7 @@
                             <td width="25%" style="text-align: center">
                                 <form action="/vocabularies/{{$vocabulary->id}}" method="post">
                                     {{csrf_field()}}
-                                    <a href="/vocabularies/{{$category->id}}/edit" class="btn btn-Edit mr-1"> <i class="fas fa-edit"></i></a>
+                                    <a href="/vocabularies/{{$vocabulary->id}}/edit" class="btn btn-Edit mr-1"> <i class="fas fa-edit"></i></a>
                                     <input type="hidden" name="_method" value="DELETE">
                                     <button class="btn btn-Red"><i class="fas fa-trash-alt"></i></button>
                                 </form>
@@ -65,6 +65,14 @@
                 @else
                 @endif
             </table>
+            <div class="offset-4">
+                <div class="buttonAction row">
+                    <a href="/categories"><button class="btn btn-createCate"> ย้อนกลับ</button></a>
+                </div>
+            </div>
+
+
+
 
 
 

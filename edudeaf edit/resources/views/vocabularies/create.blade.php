@@ -76,11 +76,16 @@
 
 
 
+                <div class="buttonAction row">
+                    <div class="col-md-5 offset-2">
+                        <button type="submit" value="Submit" class="btn btn-createCate"><i class="fas fa-plus-circle"></i> เพิ่มคำศัพท์</button>
+                    </div>
+                    <div class="col-md-5">
 
+                        <a class="btn btn-teachBack"  href="/categories/{{$category_id}}"><i class="fas fa-times-circle"></i> ยกเลิก</a>
 
-                <div>
-                    <button class="btn btn-primary" type="submit" value="Submit">เพิ่มหมวดหมู่คำศัพท์</button>
-                    <a class="btn btn-info" href="/categories/{{$category_id}}"><i class="fas fa-chevron-left"></i> ยกเลิก</a>
+                        {{--<a href="/categories"><button class="btn-teachBack"><i class="fas fa-times-circle"></i> ยกเลิก</button></a>--}}
+                    </div>
                 </div>
             </form>
         </div>

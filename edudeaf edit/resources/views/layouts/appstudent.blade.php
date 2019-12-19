@@ -27,7 +27,7 @@
             </div>
         </div>
         <div class="container">
-            <hr>
+            {{--<hr>--}}
         </div>
     </div>
 

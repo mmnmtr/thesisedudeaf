@@ -12,8 +12,12 @@
 <body>
 @include('inc.teacher_header')
 <div class="container mt-10">
-    @include('inc.message')
+    {{--@include('inc.message')--}}
+    @include('sweetalert::alert')
     @yield('content')
+</div>
+<div class="footer text-center">
+    <p>copyright © 2019 | eduDeaf.com </p>
 </div>
 
 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>

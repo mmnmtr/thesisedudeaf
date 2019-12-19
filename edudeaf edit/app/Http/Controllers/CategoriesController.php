@@ -23,8 +23,8 @@ class CategoriesController extends Controller
             ->groupBy('vocabularies.category_id')
             ->orderBy('categories.id', 'asc')
             ->get();
-
         return view('categories.index',compact('categories'));
+
     }
 
     public function create(){
@@ -44,6 +44,7 @@ class CategoriesController extends Controller
             'category_name'=>'required',
             'category_image'=>'image|max:1999'
         ]);
+
 
         $filenameWithExt = $request->file('category_image')->getClientOriginalName();
         $filename = pathinfo($filenameWithExt,PATHINFO_FILENAME);

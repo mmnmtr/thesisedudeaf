@@ -11,6 +11,8 @@
 |
 */
 
+Route::get('my-notification/{type}', 'HomeController@myNotification');
+
 Route::get('/','HomeController@index');
 
 Route::get('/login','LoginController@index')->name('login');

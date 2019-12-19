@@ -2,7 +2,7 @@
     <nav class="navbar navbar-default no-margin">
         <!-- Brand and toggle get grouped for better mobile display -->
         <div class="navbar-header fixed-brand">
-            <a class="navbar-brand" href="/user"><img src="/../img/logo_edudeaf.png" alt=""></a>
+            <a class="navbar-brand" href="/user"><img src="/../img/logo_edudef_teacher.png" alt=""></a>
             {{--<button type="button" class="navbar-toggle collapsed fixed-left" data-toggle="collapse" id="menu-toggle">--}}
                 {{--<span class="" aria-hidden="true">สววว</span>--}}
             {{--</button>--}}
@@ -25,10 +25,10 @@
         <div id="sidebar-wrapper">
             <ul class="sidebar-nav nav-pills nav-stacked" id="menu">
                 <li>
-                    <a href="#"><span class="icon-menu fa-stack fa-lg pull-left"><i class="fas fa-home "></i></span> หน้าหลัก</a>
+                    <a href="/"><span class="icon-menu fa-stack fa-lg pull-left"><i class="fas fa-home "></i></span> หน้าหลัก</a>
                 </li>
                 <li>
-                    <a href="#"><span class="icon-menu fa-stack fa-lg pull-left"><i class="fas fa-plus-circle"></i></span> เพิ่มหมวดหมู่คำศัพท์</a>
+                    <a href="/categories"><span class="icon-menu fa-stack fa-lg pull-left"><i class="fas fa-plus-circle"></i></span> เพิ่มหมวดหมู่คำศัพท์</a>
                 </li>
                 <li>
                     <a href="#"><span class="icon-menu fa-stack fa-lg pull-left"><i class="fas fa-plus-circle "></i></span> ตัวสะกดนิ้วมือไทย</a>

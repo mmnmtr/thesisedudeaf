@@ -29,7 +29,7 @@
                     <img src="/../img/halo.png" alt="">
                 </div>
             </div>
-            <hr>
+            {{--<hr>--}}
         </div>
     </div>
 

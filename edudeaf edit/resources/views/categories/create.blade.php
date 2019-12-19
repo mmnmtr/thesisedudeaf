@@ -27,6 +27,8 @@
                     <div class="form-group">
                         <label for="due" class="padding40 categoryTitle control-label">| รูปภาพหน้าปกหมวดหมู่คำศัพท์</label>
                         <div class="padding40">
+
+
                             <input class="createInput form-control" name="category_image" type="file">
                         </div>
                     </div>

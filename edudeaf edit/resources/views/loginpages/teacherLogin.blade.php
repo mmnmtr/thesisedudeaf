@@ -2,7 +2,7 @@
 @section('content')
     <div class="container">
         <div class="col-12 teacher-logo">
-            <img src="/../img/logo_edudeaf.png" alt="">
+            <img src="/../img/logo_edudef_teacher.png" alt="">
         </div>
 
         <div  class="col-12 col-md-11 offset-1 teacher-login">
