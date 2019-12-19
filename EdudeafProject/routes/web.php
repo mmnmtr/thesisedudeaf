@@ -10,8 +10,8 @@
 | contains the "web" middleware group. Now create something great!
 |
 */
-
-Route::get('my-notification/{type}', 'HomeController@myNotification');
+//
+//Route::get('my-notification/{type}', 'HomeController@myNotification');
 
 Route::get('/','HomeController@index');
 
