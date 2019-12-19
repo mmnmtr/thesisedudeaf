@@ -15,7 +15,7 @@
                             </a>
                         </div>
                         <div class="col-md-6 text-center">
-                            <a href="/teacher/login" class="logoLoginPhoto">
+                            <a href="/categories" class="logoLoginPhoto">
                                 <img src="/../img/teacher-01.png" alt="">
                                 <h1>คุณครู</h1>
                             </a>

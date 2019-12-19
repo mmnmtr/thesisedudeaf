@@ -94,7 +94,7 @@ button.btn-login {
     margin-top: 15px;
     border-radius: 50px;
 }
-.footer-line {
+.footer {
     width: 100%;
     height: 240px;
 }
@@ -128,6 +128,9 @@ button.btn-login {
     float: left;
     color: #ffffff;
     background: #3078FF;
+    position: fixed;
+    left: 0;
+    bottom: 0;
 }
 .copyright span {
     color: #ffffff;

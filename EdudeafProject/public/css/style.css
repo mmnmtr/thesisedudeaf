@@ -54,13 +54,14 @@ body{
 
 
 
+
 /* Toggle Styles */
 .navbar {
     position: fixed;
     top: 0;
     z-index: 10;
     width: 100%;
-    height: 100a;
+    height: 100px;
     border-bottom: solid 2px #e8e8e8;
     background-color: #ffffff;
 }
@@ -76,6 +77,18 @@ body{
 
 .navbar-brand img {
     width: 70%;
+}
+.btn-logout {
+    width: 169.9px;
+    height: 48.4px;
+    border-radius: 76px;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.16);
+    border: solid 1px #c6ccd8;
+    background-color: #ffffff;
+    font-family: 'Bai Jamjuree', sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    color: #abb1bc;
 }
 
 
