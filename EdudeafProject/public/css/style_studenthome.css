@@ -109,6 +109,9 @@ nav.nav-mobile {
 .bandner {
     padding-top: 435px;
 }
+.bandnerLeft {
+    margin-top: -100px;
+}
 .bandnerRight {
     padding-left: -50px;
 }

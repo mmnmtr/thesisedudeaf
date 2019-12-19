@@ -13,7 +13,7 @@
 //
 //Route::get('my-notification/{type}', 'HomeController@myNotification');
 
-Route::get('/','HomeController@index');
+Route::get('/','StudentController@index');
 
 Route::get('/login','LoginController@index')->name('login');
 Route::post('/login','LoginController@login');
