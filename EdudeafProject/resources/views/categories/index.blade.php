@@ -8,12 +8,12 @@
                         <span><div class="circke-blue"></div></span> <h1> เพิ่มหมวดหมู่คำศัพท์</h1>
                     </div>
                     <div class="createCate col-md-3">
-                        <button class="btn btn-create">
-                            <a href="/categories/create">
+                        <a href="/categories/create">
+                            <button class="btn btn-create">
                                 <i class="fas fa-plus-circle "></i>
                                 เพิ่มหมวดหมู่คำศัพท์
-                            </a>
-                        </button>
+                            </button>
+                        </a>
                     </div>
                 </div>
             </div>

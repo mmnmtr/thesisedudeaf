@@ -17,7 +17,7 @@
     @yield('content')
 </div>
 <div class="content_bg">
-    <img src="../img/fakeface_bg2.png" alt="">
+    <img src="/../img/fakeface_bg2.png" alt="">
 </div>
 <footer>
     <div class="footer">
@@ -97,6 +97,18 @@
         });
 
     });
+</script>
+<script>
+    var ppbutton = document.getElementById("vidbutton");
+    ppbutton.addEventListener("click", playPause);
+    myVideo = document.getElementById("myvid");
+    function playPause() {
+
+            myVideo.pause();
+            ppbutton.innerHTML = "<i class=\"fa fa-play-circle\">";
+
+    }
+
 </script>
 </body>
 </html>

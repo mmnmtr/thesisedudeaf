@@ -14,7 +14,7 @@
 @include('inc.teacher_header')
 <div class="container mt-10">
     {{--@include('inc.message')--}}
-    @include('sweetalert::alert')
+
     @yield('content')
 </div>
 <div class="footer text-center">
@@ -83,5 +83,46 @@
 
     addNumeration("number")
 </script>
+<script>
+    (function($) {
+        $.fn.mnFileInput = function(params) {
+            this.change(function(e) {
+                $valueDom = $(this).closest('.customFile').find('.selectedFile');
+                // $valueDom.addClass('inProgress');
+                var filename = $('.customFile').data('label');
+                if(e.target){
+                    var fullPath = e.target.value;
+                    filename = fullPath.replace(/^.*[\\\/]/, '');
+                    $valueDom.text(filename);
+
+                    e.target.onprogress = function (e) {
+                        if (e.lengthComputable) {
+                            console.log(e.loaded+  " / " + e.total)
+                        }
+                    }
+
+                    // $valueDom.removeClass('inProgress');
+                    console.log('>>>', this, e);
+                }
+            });
+        };
+    })(jQuery);
+
+    $(".customFile > input").mnFileInput();
+
+</script>
+<script>
+    // Add active class to the current button (highlight it)
+    var header = document.getElementById("menu");
+    var btns = header.getElementsByClassName("btn");
+    for (var i = 0; i < btns.length; i++) {
+        btns[i].addEventListener("click", function() {
+            var current = document.getElementsByClassName("active");
+            current[0].className = current[0].className.replace(" active", "");
+            this.className += " active";
+        });
+    }
+</script>
+@include('sweetalert::alert')
 </body>
 </html>

@@ -110,10 +110,27 @@ nav.nav-mobile {
     padding-top: 435px;
 }
 .bandnerLeft {
-    margin-top: -100px;
+    margin-top: -220px;
 }
 .bandnerRight {
     padding-left: -50px;
+}
+.bandnerLeftText h3 , .bandnerLeftText p , .bandnerLeftText h4 {
+    font-weight: bold;
+    color: #52341c;
+}
+.bandnerLeftText {
+    padding: 25px;
+}
+.bandnerLeftText h3 {
+    font-size: 34px;
+    margin-bottom: 16px;
+}
+.bandnerLeftText h4 {
+    font-size: 30px;
+}
+.bandnerLeftText p {
+    font-size: 24px;
 }
 
 .site {
@@ -399,7 +416,77 @@ footer {
     height: auto;
 }
 
+.talkBox {
+    width: 300px;
+    height: 270px;
+    background-image: url("../img/chat.png");
+    position: absolute;
+    margin-top: -790px;
+    margin-left: 350px;
+    z-index: 10;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    /*background: none;*/
+    pointer-events: none;
+}
+.talkBox h3 , .talkBox p  {
+    font-weight: bold;
+    color: #52341c;
+}
+.talkBox h3 {
+    margin-top: 15%;
+    font-size: 24px;
+    margin-bottom: 16px;
+}
 
+.talkBox p {
+    font-size: 16px;
+}
+
+
+
+.slide-right {
+    -webkit-animation: slide-right 1s cubic-bezier(0.550, 0.085, 0.680, 0.530) 0.3s both;
+    animation: slide-right 1s cubic-bezier(0.550, 0.085, 0.680, 0.530) 0.3s both;
+}
+@-webkit-keyframes slide-right {
+    0% {
+        opacity: 0;
+        -webkit-transform: translateX(-360px);
+        transform: translateX(-360px);
+    }
+    70% {
+        opacity: 70;
+
+    }
+    100% {
+        opacity: 100;
+        -webkit-transform: translateX(0px);
+        transform: translateX(0px);
+    }
+}
+@keyframes slide-right {
+    0% {
+        opacity: 0;
+        -webkit-transform: translateX(-360px);
+        transform: translateX(-360px);
+    }
+    50% {
+        opacity: 70;
+
+    }
+    100% {
+        opacity: 100;
+        -webkit-transform: translateX(0px);
+        transform: translateX(0px);
+    }
+}
+
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
 
 
 

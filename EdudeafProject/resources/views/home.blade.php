@@ -28,10 +28,17 @@
             <div class="row">
                 <div class="col-12 col-md-6 bandnerLeft ">
                     <img src="img/logo_edu.gif" alt="">
-                    <p>Lorem ipsum is placeholder text commonly
-                        used in the graphic, print, and publishing
-                        industries for previewing layouts.
-                    </p>
+
+                    <div class="bandnerLeftText slide-right" >
+                        <h3>ยินดีต้อนรับเข้าสู่ดินแดนมหัศจรรย์</h3>
+                        <p>
+                            มาสนุกกับการเรียนรู้คำศัพท์ภาษามือ
+                            <br>
+                            แต่งประโยค และแบบฝึกหัด พร้อมกันรึยัง ?
+
+                        </p>
+                        <h4>มาเริ่มผจญภัยกันเลย : - )</h4>
+                    </div>
 
                 </div>
                 <div class="col-12 col-md-5 offset-1 bandnerRight">
@@ -58,8 +65,11 @@
                                <button class="btn btn-func1RightTittle"><h1>1</h1></button>
                                <h2>หมวดหมู่คำศัพท์</h2>
                                <hr class="underTittle">
-                               <p>Lorem Ipsum is simply dummy text
-                                   and typesetting industry.</p>
+                               <p>
+                                   “ มาสนุกกับเรียนรู้คำศัพท์ด้วย
+                                   <br>
+                                   ตัวการ์ตูน  Animation 3D ”
+                               </p>
                            </div>
                        </div>
                        <div class="offset-7">
@@ -80,7 +90,7 @@
 
 
     <div class="func2">
-        <img src="/../img/bg_sentence.jpg" alt="">
+        <img src="/../img/bg_sentence.png" alt="">
         <div class="container">
             <div class="func2content">
                 <div class="row">
@@ -90,8 +100,10 @@
                                 <button class="btn btn-func2LeftTittle"><h1>2</h1></button>
                                 <h2>หมวดหมู่คำศัพท์</h2>
                                 <hr class="underTittle2">
-                                <p>Lorem Ipsum is simply dummy text
-                                    and typesetting industry.</p>
+                                <p>“ เรียนรู้การแต่งประโยคภาษามือ
+                                    <br>
+                                    ไม่ยากอย่างที่คิด มาสนุกกันเลย ”
+                                </p>
                             </div>
                             <div class="offset-3">
                                 <a href="/student"><button class="btn btnfunc2content">เริ่มเลย <i class="fas fa-arrow-circle-right"></i></button></a>
@@ -113,7 +125,7 @@
     </div>
 
     <div class="func3">
-        <img src="/../img/bg_exam.jpg" alt="">
+        <img src="/../img/bg_exam.png" alt="">
         <div class="container">
             <div class="func3content">
                 <div class="row">
@@ -126,8 +138,9 @@
                                 <button class="btn btn-func3RightTittle"><h1>3</h1></button>
                                 <h2>หมวดหมู่คำศัพท์</h2>
                                 <hr class="underTittle3">
-                                <p>Lorem Ipsum is simply dummy text
-                                    and typesetting industry.</p>
+                                <p>“ เติมเต็มพัฒนาการเรียนรู้ด้วย
+                                    <br>
+                                    แบบฝึกหัด มาลุยกันเลย ” </p>
                             </div>
                         </div>
                         <div class="offset-4">

@@ -11,7 +11,12 @@
                     <img src="/../img/icon_login.png" alt="">
                 </div>
                 <div class="login-from col-12 col-md-7">
-                    <h1>เข้าสู่ระบบคุณครู</h1>
+                    <div class="col-md-4 offset-4 userShowIcon">
+                        <img src="/../img/icon_teacher.png" alt="">
+                    </div>
+                    <div class="col-md-6 offset-3 login_inputTitle">
+                        <h1>เข้าสู่ระบบคุณครู</h1>
+                    </div>
                     <div class="col-12 offset-1 col-md-10">
                         <form class="form-horizontal" method="POST" action="{{ route('login') }}">
                             {{ csrf_field() }}

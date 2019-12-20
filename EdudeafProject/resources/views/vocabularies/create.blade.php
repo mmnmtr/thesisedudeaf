@@ -27,7 +27,10 @@
                         <div class="form-group">
                             <label for="due" class="padding40 categoryTitle control-label">| รูปภาพประกอบหน้าปก (ภาพการ์ตูน)</label>
                             <div class="padding40">
-                                <input class="createInput form-control" name="vocab_photo" type="file">
+                                <div class="customFile rightBtn" data-display="right" data-label="&#xf093; &nbsp; อัพโหลด">
+                                    <span class="selectedFile">อัพโหลดรูปภาพ .jpeg , .png </span>
+                                    <input type="file" name="vocab_photo" value="Profession" />
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -44,23 +47,16 @@
 
                     </div>
                 </div>
-                {{--<div class="row">--}}
-                    {{--<div class="col col-md-6">--}}
-                        {{--<div class="form-group">--}}
-                            {{--<label for="due" class="padding40 categoryTitle control-label">| รูปภาพประกอบ</label>--}}
-                            {{--<div class="padding40">--}}
-                                {{--<input class="createInput form-control" name="vocab_photo" type="file">--}}
-                            {{--</div>--}}
-                        {{--</div>--}}
-                    {{--</div>--}}
-                {{--</div>--}}
 
                 <div class="row">
                     <div class="col col-md-6">
                         <div class="form-group">
                             <label for="due" class="padding40 categoryTitle control-label">| รูปภาพประกอบ</label>
                             <div class="padding40">
-                                <input class="createInput form-control" name="vocab_photoReal" type="file">
+                                <div class="customFile rightBtn" data-display="right" data-label="&#xf093; &nbsp; อัพโหลด">
+                                    <span class="selectedFile">อัพโหลดรูปภาพ .jpeg , .png </span>
+                                    <input type="file" name="vocab_photoReal" value="Profession" />
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -68,7 +64,10 @@
                         <div class="form-group">
                             <label for="due" class="padding40 categoryTitle control-label">| วิดีโอภาษามือ</label>
                             <div class="padding40">
-                                <input class="createInput form-control" name="vocab_video" type="file">
+                                <div class="customFile rightBtn" data-display="right" data-label="&#xf093; &nbsp; อัพโหลด">
+                                    <span class="selectedFile">อัพโหลดรูปภาพ .jpeg , .png </span>
+                                    <input type="file" name="vocab_video" value="Profession" />
+                                </div>
                             </div>
                         </div>
                     </div>

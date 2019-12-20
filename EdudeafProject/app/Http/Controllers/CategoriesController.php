@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Category;
 use App\Vocabulary;
 use Illuminate\Http\Request;
+
 use DB;
 
 class CategoriesController extends Controller
@@ -66,7 +67,8 @@ class CategoriesController extends Controller
         $category->category_image = $filenameToStore;
         $category->save();
 
-        return redirect('/categories')->with('success','Category created');
+        return redirect('/categories')->withSuccess('สร้างหมวดหมู่คำศัพท์เรียบร้อย');
+
     }
 
     public function edit($id)
@@ -98,7 +100,7 @@ class CategoriesController extends Controller
 //        $category->category_image = $filenameToStore;
         $category->save();
 
-        return redirect('/categories')->with('success','แก้ไขเรียบร้อย');
+        return redirect('/categories')->withWarning('แก้ไขเรียบร้อย');
 
     }
 
@@ -108,7 +110,7 @@ class CategoriesController extends Controller
         //
         $category = Category::find($id);
         $category->delete();
-        return redirect('/categories');
+        return redirect('/categories')->withError('ลบหมวดหมู่คำศัพท์เรียบร้อย');
     }
 
 }

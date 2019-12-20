@@ -12,7 +12,7 @@
                     </div>
                     <div class="col-12 col-md-4 offset-5">
                         <a class="navbar-brand" href="/">
-                            <img src="/../img/logo_edudeaf.png" alt="">
+                            <img src="/../img/logo_edu.gif" alt="">
                         </a>
 
                     </div>

@@ -4,6 +4,7 @@ body {
     background-image: url("../img/fakeface_bg.png");
     background-repeat : no-repeat;
     background-position: 0px 245px;
+    background-size: 100% auto;
 }
 @font-face {
     font-family: 'nattanan_tsl_fingerspellingRg';
@@ -21,6 +22,9 @@ body {
     .container {
         max-width: 1440px;
     }
+}
+a.logoLoginPhoto:hover, a.logoLoginPhoto:focus {
+    text-decoration: none;
 }
 .function {
     padding-top: 150px;
@@ -135,12 +139,12 @@ nav.nav-mobile {
     margin-top: 85px;
 }
 .categories_list {
-    margin: 30px 160px;
+    margin: 30px 120px;
     width: 100%;
 }
 .card {
     width: 100%;
-    height: auto;
+    height: 310px;
     border-radius: 33px;
     box-shadow: 0 6px 9px 0 rgba(0, 0, 0, 0.16);
     border: solid 10px #ffcd1a;
@@ -152,18 +156,26 @@ nav.nav-mobile {
     text-align: center;
     color: #393939;
 }
+.card:hover {
+    background: #ffcd1a;
+    color: #FFFFFF;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.16);
+    /*transform: scale(0.9, 0.9);*/
+}
 .card-body h4 {
     font-size: 30px;
     font-weight: bold;
 }
 .card-img-top {
-    width: 85%;
+    width: 75%;
     height: auto;
+    margin-top: 5%;
 }
 
 .wordPhoto {
     width: 350px;
     height: 350px;
+    margin-top: 15%;
     border-radius: 50%;
     background: #ffffff;
     overflow: hidden;
@@ -173,9 +185,8 @@ nav.nav-mobile {
 .wordPhoto img {
     display: inline;
     margin: 0 auto;
-    margin-left: -25%;
-    height: 100%;
-    width: auto;
+    height: auto;
+    width: 100%;
 }
 .videoShow {
     background-size: 100% 100%;
@@ -254,7 +265,7 @@ h2.signLang {
 
 .exercise_list {
     width: 100%;
-    margin: 50px 160px;
+    margin: 50px 130px;
 }
 .selectPhoto {
     /*background-image: url("");*/
@@ -264,6 +275,10 @@ h2.signLang {
     width: 100%;
     height: auto;
     margin-top: -410px ;
+}
+.content_bg img {
+    width: 100%;
+    height: auto;
 }
 
 footer {
@@ -287,4 +302,11 @@ footer {
     border: 0;
     border-top: 15px solid #ffffff;
     border-radius: 25px 25px 25px 25px;
+}
+
+
+
+.videoShow button {
+    font-size: 100px;
+    color: #FFFFFF;
 }

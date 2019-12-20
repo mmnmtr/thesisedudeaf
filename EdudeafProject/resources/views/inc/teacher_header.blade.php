@@ -46,7 +46,20 @@
     <div id="wrapper">
         <!-- Sidebar -->
         <div id="sidebar-wrapper">
+
             <ul class="sidebar-nav nav-pills nav-stacked" id="menu">
+                <div class="col-md-12">
+                    <div class="row userShow">
+                        <div class="col-md-5 userShowIcon">
+                            <img src="/../img/icon_teacher.png" alt="">
+                        </div>
+                        <div class="col-md-7 row TeacherEdudeaf">
+                            <h3>TeacherEdudeaf</h3>
+                            <p>Admin</p>
+                        </div>
+
+                    </div>
+                </div>
 
                     <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
                         <li class="nav-item active">
@@ -60,22 +73,20 @@
                         </li>
                     </ul>
                 <li >
-                    <a href="/"><span class="icon-menu fa-stack fa-lg pull-left"><i class="fas fa-home "></i></span> หน้าหลัก</a>
+                    <a href="/"><span class="icon-menu fa-stack fa-lg pull-left"><i class="fas fa-home "></i></span>&nbsp;&nbsp; หน้าหลัก</a>
                 </li>
                 <li>
-                    <a href="/categories"><span class="icon-menu fa-stack fa-lg pull-left"><i class="fas fa-plus-circle"></i></span> เพิ่มหมวดหมู่คำศัพท์</a>
+                    <a class="active" href="/categories"><span class="icon-menu fa-stack fa-lg pull-left"><i class="fas fa-align-justify"></i></span>&nbsp;&nbsp; เพิ่มหมวดหมู่คำศัพท์</a>
                 </li>
                 <li>
-                    <a href="#"><span class="icon-menu fa-stack fa-lg pull-left"><i class="fas fa-plus-circle "></i></span> ตัวสะกดนิ้วมือไทย</a>
+                    <a href="#"><span class="icon-menu fa-stack fa-lg pull-left"><i class="fas fa-spell-check"></i></span>&nbsp;&nbsp; แต่งประโยค</a>
                 </li>
                 <li>
-                    <a href="#"> <span class="icon-menu fa-stack fa-lg pull-left"><i class="fas fa-plus-circle "></i></span> เพิ่มแบบฝึกหัด</a>
+                    <a href="#"> <span class="icon-menu fa-stack fa-lg pull-left"><i class="fas fa-user-edit"></i></span>&nbsp;&nbsp; เพิ่มแบบฝึกหัด</a>
                 </li>
+
                 <li>
-                    <a href="#"><span class="icon-menu fa-stack fa-lg pull-left"><i class="fas fa-plus-circle "></i></span> จัดการแต่งประโยค</a>
-                </li>
-                <li>
-                    <a href="#"><span class="icon-menu fa-stack fa-lg pull-left"><i class="fas fa-user-graduate "></i></span> ข้อมูลนักเรียน</a>
+                    <a href="#"><span class="icon-menu fa-stack fa-lg pull-left"><i class="fas fa-user-graduate "></i></span>&nbsp;&nbsp; ข้อมูลนักเรียน</a>
                 </li>
             </ul>
         </div>

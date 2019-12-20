@@ -28,8 +28,10 @@
                         <label for="due" class="padding40 categoryTitle control-label">| รูปภาพหน้าปกหมวดหมู่คำศัพท์</label>
                         <div class="padding40">
 
-
-                            <input class="createInput form-control" name="category_image" type="file">
+                            <div class="customFile rightBtn" data-display="right" data-label="&#xf093; &nbsp; อัพโหลด">
+                                <span class="selectedFile">อัพโหลดรูปภาพ .jpeg , .png </span>
+                                <input type="file" name="category_image" value="Profession" />
+                            </div>
                         </div>
                     </div>
                     <div class="buttonAction row">
@@ -40,22 +42,10 @@
 
                                 <a class="btn btn-teachBack" href="/categories"><i class="fas fa-times-circle"></i> ยกเลิก</a>
 
-                            {{--<a href="/categories"><button class="btn-teachBack"><i class="fas fa-times-circle"></i> ยกเลิก</button></a>--}}
                         </div>
                     </div>
 
                 </form>
-
-                {{--<div class="buttonAction row">--}}
-                    {{--<div class="col-md-5 offset-2">--}}
-                        {{--<button type="submit" class="btn btn-createCate"><i class="fas fa-plus-circle"></i> เพิ่มหมวดหมู่คำศัพท์</button>--}}
-                    {{--</div>--}}
-                    {{--<div class="col-md-5">--}}
-
-                        {{--<a href="/categories"><button class="btn-teachBack"><i class="fas fa-times-circle"></i> ยกเลิก</button></a>--}}
-                    {{--</div>--}}
-                {{--</div>--}}
-
 
             </div>
         </div>

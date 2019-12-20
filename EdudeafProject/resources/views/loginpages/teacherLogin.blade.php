@@ -11,6 +11,7 @@
                     <img src="/../img/icon_login.png" alt="">
                 </div>
                 <div class="login-from col-12 col-md-7">
+                    <div class="login_input"></div>
                     <h1>เข้าสู่ระบบคุณครู</h1>
                     <div class="col-12 offset-1 col-md-10">
                         <div class="login">

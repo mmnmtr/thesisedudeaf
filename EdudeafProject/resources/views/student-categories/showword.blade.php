@@ -25,6 +25,12 @@
                                 </div>
                                 <div class="videoShow col-md-8">
                                     {{--<img class="videoBg" src="/../img/video_wood.png" alt="">--}}
+
+                                    {{--<video id="myvid" width="100%">--}}
+                                        {{--<source src="/uploads/vocabularies/{{$vocabulary->category_id}}/{{$vocabulary->vocab_video}}" type="video/mp4">--}}
+                                    {{--</video>--}}
+                                    {{--<button id="vidbutton"><i class="fas fa-play-circle"></i></button>--}}
+
                                     <video id="my-video" class="video-js" controls preload="auto" width="100%" height="auto" data-setup="{}">
                                         <source src="/uploads/vocabularies/{{$vocabulary->category_id}}/{{$vocabulary->vocab_video}}" type='video/mp4'>
                                     </video>

@@ -24,11 +24,26 @@
             </div>
         </div>
         <div class="container">
+            <div class="btn talkBox">
+                    <h3>สนุกกันเปล่า ?</h3>
+
+                    <p>
+                        หวังว่าการผจญภัยในครั้งนี้
+                        <br>
+                        จะทำให้ทุกคนสนุกกับการเรียนรู้
+                        <br>
+                        ไว้มาเจอกันใหม่นะ : - )
+                    </p>
+            </div>
             <div class="col-md-4 offset-1">
                 <div class="modelFooter">
+
                     <img src="/../img/halo.png" alt="">
+
                 </div>
+
             </div>
+
             {{--<hr>--}}
         </div>
     </div>

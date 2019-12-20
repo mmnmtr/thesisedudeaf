@@ -51,10 +51,11 @@ body {
     margin-top: -30%;
 }
 .bandner p {
-    font-size: 28px;
+    font-size: 40px;
     font-weight: bold;
     color: #393939;
     margin-top: -10%;
+    padding-bottom: 20px;
 }
 .logoLoginPhoto img {
     width: 100%;

@@ -13,6 +13,31 @@ a {
     text-decoration: none!important;
 }
 
+.TeacherEdudeaf h3 {
+    font-size: 17px;
+    font-weight: bold;
+    color: #3078ff;margin-top: 15%;
+}
+
+.userShowIcon {
+    width: 100%;
+    height: auto;
+}
+.userShowIcon img {
+    width: 100%;
+    height: auto;
+    border-radius: 50%;
+    border: 4px solid #FFFFFF;
+    background: #3078ff ;
+    filter: drop-shadow(0px 2px 8px rgba(0,0,0,0.2));
+}
+
+.TeacherEdudeaf p {
+    font-size: 15px;
+    font-weight: bold;
+    color: #26335e;
+}
+
 .drag {
     font-family: 'nattanan_tsl_fingerspellingRg';
     -webkit-text-stroke: 1px #000000;
@@ -186,9 +211,11 @@ body{
 }
 
 
-.sidebar-nav li a:active,
-.sidebar-nav li a:focus {
+.sidebar-nav li a.active{
     text-decoration: none;
+    color: #3078ff;
+    background-color: #f4f8ff;
+    border-left: #3078ff 6px solid;
 }
 
 .sidebar-nav > .sidebar-brand {
@@ -286,35 +313,58 @@ body{
 .videoAnimate video {
     vertical-align: middle;
 }
+
 .btn-create {
     width: 100%;
     height: 60px;
-    font-family: 'Bai Jamjuree';
     font-size: 16px;
     font-weight: 600;
-    line-height: 1.19;
-    letter-spacing: 0.48px;
+    border-radius: 50px;
+    border: solid 1px #3078ff;
+    background-color: #ffffff;
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    border-radius: 50px;
     color: #3078ff;
     box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.16);
-    border: solid 1px #3078ff;
-    border-radius: 50px;
-    background-color: #ffffff;
 }
-.btn-create a {
-    font-family: 'Bai Jamjuree';
-    font-size: 16px;
-    font-weight: 600;
-    color: #3078ff;
-}
- .createCate :hover {
+.btn-create:hover {
+    border: solid 1px #c6ccd8;
     background-color: #3078ff;
     color: #ffffff;
 }
 
-.btn-create a:hover {
-    text-decoration: none;
-    color: #3078ff;
-}
+/*!*.btn-create {*!*/
+    /*width: 100%;*/
+    /*height: 60px;*/
+    /*font-family: 'Bai Jamjuree';*/
+    /*font-size: 16px;*/
+    /*font-weight: 600;*/
+    /*line-height: 1.19;*/
+    /*letter-spacing: 0.48px;*/
+    /*color: #3078ff;*/
+    /*box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.16);*/
+    /*border: solid 1px #3078ff;*/
+    /*border-radius: 50px;*/
+    /*background-color: #ffffff;*/
+/*}*/
+/*!*.btn-create a {*!*/
+    /*!*font-family: 'Bai Jamjuree';*!*/
+    /*!*font-size: 16px;*!*/
+    /*!*font-weight: 600;*!*/
+    /*!*color: #3078ff;*!*/
+/*!*}*!*/
+/*!*.createCate :hover {*!*/
+    /*!*background-color: #3078ff;*!*/
+    /*!*color: #ffffff;*!*/
+/*!*}*!*/
+
+/*.btn-create :hover {*/
+    /*text-decoration: none;*/
+    /*border: solid 1px #c6ccd8;*/
+    /*background-color: #3078ff;*/
+    /*color: #ffffff;*/
+/*}*/
 
 table td, .table th {
     padding: 1.25rem!important;
@@ -477,4 +527,101 @@ table td, .table th {
     color: white;
     text-align: center;
     z-index: 10;
+}
+
+/*.fieldControl { max-width:90%; width:460px; position:absolute; top:58%; left:50%; transform: translate(-50%,-50%); -webkit-transform: translate(-50%,-50%);}*/
+
+.customFile {
+    width: 100%;
+    height: 70px;
+    border-radius: 8px 50px 50px 8px;
+    background: #ffffff;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.16);
+    font-weight: 600;
+    color: #b2b2b2;
+    position: relative;
+    font-size: 20px;
+    line-height: 33px;
+    overflow: hidden;
+}
+.customFile:before {
+    content: attr(data-label);
+    font-family: FontAwesome , 'Bai Jamjuree';
+    /*content: "\f093 &nbsp อัพโหลด ";*/
+    box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.16);
+    background-color: #3078ff;
+    color: #FFF;
+    border-radius: 50px;
+    padding: 20px 12px 20px 0;
+    float: left;
+    width: 275px;
+    height: 70px;
+    text-align: center;
+    display: block;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+.customFile input {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 88888;
+    width: 100%;
+    height: 70px;
+    cursor: pointer;
+    opacity: 0!important;
+}
+.customFile .selectedFile {
+    color: #b2b2b2;
+    display: block;
+    padding: 20px 10px 0;
+    margin-left: 150px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    transform: translateX(0%);
+    /*transition: all 0.4s ease 0.6s;*/
+}
+/* transition TDO */
+.customFile .selectedFile.inProgress {
+    transform: translateX(100%);
+    transition: all 0.4s ease 0.6s;
+}
+
+/* Right Btn */
+.customFile[data-display=right]:before {
+    float:right;
+}
+.customFile[data-display=right] .selectedFile {
+    margin: 0 150px 0 0;
+}
+
+/* vertical */
+.customFile[data-display=vertical]:before {
+    float:none; width:auto;
+}
+.customFile[data-display=vertical] .selectedFile {
+    margin: 0;
+}
+
+/* Btn */
+.customFile[data-display=btn]:before {
+    float:none;
+    width:auto;
+}
+.customFile[data-display=btn] .selectedFile {
+    display:none;
+}
+
+
+
+
+
+
+
+
+.swal2-title {
+    font-family: 'Bai Jamjuree';
 }
