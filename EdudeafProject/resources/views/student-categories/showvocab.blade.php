@@ -12,12 +12,12 @@
                                 {{$category->category_name}}
                             </h1>
                         </div>
-                        <div class="categories_list">
-                            <div class="row">
+                        <div class="categories_list_padding">
+                            <div class="regular">
                                 @if(count($category->vocabularies) > 0 )
                                     @foreach($category->vocabularies as $vocabulary)
 
-                                        <div class="col-md-4 ">
+                                        <div class="col-md-12">
                                             <div class="card mb-4 box-shadow">
                                                 <div class="text-center">
 

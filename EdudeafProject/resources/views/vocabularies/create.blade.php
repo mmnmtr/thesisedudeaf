@@ -21,7 +21,7 @@
                         <div class="form-group">
                             <label  for="text" class="padding40 categoryTitle control-label">| ชื่อคำศัพท์</label>
                             <div class="padding40">
-                                <input id="fname" onkeyup="getVal()" type="text" class="createInput form-control" name="vocab_word" type="text" id="text" placeholder="กรุณากรอกคำศัพท์">
+                                <input  maxlength="10" size="10" id="fname" onkeyup="getVal()" type="text" class="createInput form-control" name="vocab_word" type="text" id="text" placeholder="กรุณากรอกคำศัพท์">
                             </div>
                         </div>
                         <div class="form-group">

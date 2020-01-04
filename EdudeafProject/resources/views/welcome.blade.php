@@ -4,7 +4,7 @@
         <div class="bandner">
             <div class="row">
                 <div class="col-12 col-md-6 bandnerLeft ">
-                    <p>ยินดีต้อนรับเข้าสู่ EduDeafe
+                    <p>ยินดีต้อนรับเข้าสู่ EduDeaf
                         <br>
                         มาสนุกเพลิดเพลินกับการเรียนรู้
                         <br>

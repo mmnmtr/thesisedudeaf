@@ -9,6 +9,11 @@
     <link rel="stylesheet" href="/css/style_student.css">
 
     <link href="https://fonts.googleapis.com/css?family=Kodchasan&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css">
 </head>
 <body>
 @include('inc.student_header')
@@ -32,6 +37,31 @@
     </div>
 
 </footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.js"  type="text/javascript"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"  type="text/javascript"></script>
+<script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+<script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+<script>
+    $(".regular").slick({
+        dots: false,
+        infinite: true,
+        slidesPerRow: 3,
+        rows: 2,
+        responsive: [
+            {
+                breakpoint: 478,
+                settings: {
+                    slidesPerRow: 1,
+                    rows: 1,
+                }
+            }
+        ],
+        prevArrow:"<img class='a-left control-c prev slick-prev' src='/../img/left.png'>",
+        nextArrow:"<img class='a-right control-c next slick-next' src='/../img/right.png'>"
+    });
+</script>
 
 
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>

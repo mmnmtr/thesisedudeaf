@@ -142,6 +142,11 @@ nav.nav-mobile {
     margin: 30px 120px;
     width: 100%;
 }
+.categories_list_padding {
+    padding: 30px 120px;
+    width: 100%;
+    height: auto;
+}
 .card {
     width: 100%;
     height: 310px;
@@ -170,6 +175,7 @@ nav.nav-mobile {
     width: 75%;
     height: auto;
     margin-top: 5%;
+    margin-left: 45px;
 }
 
 .wordPhoto {
@@ -310,3 +316,35 @@ footer {
     font-size: 100px;
     color: #FFFFFF;
 }
+
+
+.slick-prev {
+    left: -175px!important;
+}
+.slick-next {
+    right: -175px!important;
+}
+
+.slick-next, .slick-prev {
+    width: 120px!important;
+    height: 120px!important;
+}
+
+
+.slick-initialized .slick-slide {
+    /*width: 380px;*/
+    /*height: 349px;*/
+}
+
+
+
+/*.slick-list {*/
+/*width: 100%;*/
+/*}*/
+/*.slick-initialized .slick-slide {*/
+/*width: 410px;*/
+/*}*/
+/*.slick-slider {*/
+/*width: 100%;*/
+/*!*position: absolute!important;*!*/
+/*}*/
