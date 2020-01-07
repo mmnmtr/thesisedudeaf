@@ -16,9 +16,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css">
 </head>
 <body>
-@include('inc.student_header')
+@include('layouts.inc.student_header')
 <div class=" mt-10">
-    @include('inc.message')
     @yield('content')
 </div>
 <div class="content_bg">

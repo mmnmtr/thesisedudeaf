@@ -11,7 +11,6 @@ try {
     window.$ = window.jQuery = require('jquery');
 
     require('bootstrap-sass');
-    require('@coreui/coreui');
 } catch (e) {}
 
 /**
@@ -52,4 +51,3 @@ if (token) {
 //     broadcaster: 'pusher',
 //     key: 'your-pusher-key'
 // });
-

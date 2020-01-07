@@ -8,7 +8,7 @@
                         <span><div class="circke-blue"></div></span> <h1> เพิ่มหมวดหมู่คำศัพท์</h1>
                     </div>
                     <div class="createCate col-md-3">
-                        <a href="/categories/create">
+                        <a href="/admin/categories/create">
                             <button class="btn btn-create">
                                 <i class="fas fa-plus-circle "></i>
                                 เพิ่มหมวดหมู่คำศัพท์
@@ -43,14 +43,14 @@
                                         <td width="25%" style="text-align: center"><img src="uploads/catergorie_covers/{{$category->category_image}}"></td>
                                         <td width="20%" style="text-align: center">{{$category->count}}</td>
                                         <td width="25%" style="text-align: center">
-                                            <form action="/categories/{{$category->id}}" method="post">
+                                            <form action="/admin/categories/{{$category->id}}" method="post">
                                                 {{csrf_field()}}
-                                                <a href="/categories/{{$category->id}}/edit" class="btn btn-Edit mr-1"> <i class="fas fa-edit"></i></a>
+                                                <a href="/admin/categories/{{$category->id}}/edit" class="btn btn-Edit mr-1"> <i class="fas fa-edit"></i></a>
                                                 <input type="hidden" name="_method" value="DELETE">
                                                 <button class="btn btn-Red"><i class="fas fa-trash-alt"></i></button>
                                             </form>
                                         </td>
-                                        <td width="20%" style="text-align: center"><a href="/categories/{{$category->id}}"><button class="btn btn-More"><i class="fas fa-clipboard-list"></i> ดูคำศัพท์</button></a></td>
+                                        <td width="20%" style="text-align: center"><a href="/admin/categories/{{$category->id}}"><button class="btn btn-More"><i class="fas fa-clipboard-list"></i> ดูคำศัพท์</button></a></td>
                                     </tr>
                                 </tbody>
                             @endforeach

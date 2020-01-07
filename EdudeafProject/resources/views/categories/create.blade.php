@@ -16,7 +16,7 @@
     <div class="categories_list">
         <div class="col-md-12">
             <div class="col col-md-12">
-                <form method="POST" action="/categories/store" enctype="multipart/form-data">
+                <form method="POST" action="/admin/categories/store" enctype="multipart/form-data">
                     {{csrf_field()}}
                     <div class="form-group">
                         <label for="text" class="categoryTitle control-label">| ชื่อหมวดหมู่คำศัพท์</label>
@@ -40,7 +40,7 @@
                         </div>
                         <div class="col-md-5">
 
-                                <a class="btn btn-teachBack" href="/categories"><i class="fas fa-times-circle"></i> ยกเลิก</a>
+                                <a class="btn btn-teachBack" href="/admin"><i class="fas fa-times-circle"></i> ยกเลิก</a>
 
                         </div>
                     </div>

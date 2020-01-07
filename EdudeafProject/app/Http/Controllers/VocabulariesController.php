@@ -67,7 +67,7 @@ class VocabulariesController extends Controller
         $category->vocab_video = $filenameToStore;
         $category->save();
 
-        return redirect('/categories/'. $request->input('category_id'))->with('เพิ่มคำศัพท์สำเร็จ');
+        return redirect('/admin/categories/'. $request->input('category_id'))->with('เพิ่มคำศัพท์สำเร็จ');
     }
     public function edit($id)
     {
@@ -86,7 +86,7 @@ class VocabulariesController extends Controller
         $vocabulary->vocab_word = $request->input('vocab_word');
         $vocabulary->save();
 
-        return redirect('/categories/'.$vocabulary->category_id)->withWarning('แก้ไขเรียบร้อย');
+        return redirect('/admin/categories/'.$vocabulary->category_id)->with('แก้ไขเรียบร้อย');
 
     }
     public function show($id){
@@ -96,6 +96,6 @@ class VocabulariesController extends Controller
     public function destroy($id){
         $vocabulary = Vocabulary::find($id);
         $vocabulary->delete();
-        return redirect('/categories/'.$vocabulary->category_id)->withError('ลบหมวดหมู่คำศัพท์เรียบร้อย');
+        return redirect('/admin/categories/'.$vocabulary->category_id)->with('ลบหมวดหมู่คำศัพท์เรียบร้อย');
     }
 }

@@ -12,7 +12,7 @@
             </div>
             <div class="categories_list">
                 <div class="col-md-12">
-                    <form method="POST" action="/vocabularies/{{$vocabulary->id}}">
+                    <form method="POST" action="/admin/vocabularies/{{$vocabulary->id}}">
                         {{ csrf_field() }}
                         <div class="row">
                             <input type="hidden" name="_method" value="put">
@@ -47,7 +47,7 @@
                                 <button type="submit" class="btn btn-createCate"><i class="fas fa-plus-circle"></i> แก้ไข</button>
                             </div>
                             <div class="col-md-5">
-                                <a class="btn btn-teachBack" href="/categories/{{$vocabulary->category_id}}"><i class="fas fa-times-circle"></i> ยกเลิก</a>
+                                <a class="btn btn-teachBack" href="/admin/categories/{{$vocabulary->category_id}}"><i class="fas fa-times-circle"></i> ยกเลิก</a>
                                 {{--<a href="/categories"><button class="btn-teachBack"><i class="fas fa-times-circle"></i> ยกเลิก</button></a>--}}
                             </div>
                         </div>

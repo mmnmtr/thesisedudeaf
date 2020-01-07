@@ -3,15 +3,19 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use RealRashid\SweetAlert\Facades\Alert;
 
 class StudentController extends Controller
 {
-    //
-
+    /**
+     * Display a listing of the resource.
+     *
+     * @return \Illuminate\Http\Response
+     */
     public function index()
     {
-        Alert::success('สำเร็จ', 'Success Message');
-        return view('home');
+        //
+        return view('studentHome');
     }
+
+
 }

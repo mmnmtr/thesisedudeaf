@@ -9,7 +9,7 @@
                     </div>
                     <div class="col-md-3">
                         <button class="btn btn-create">
-                            <a href="/vocabularies/create/{{$category->id}}">
+                            <a href="/admin/vocabularies/create/{{$category->id}}">
                                 <i class="fas fa-plus-circle "></i>
                                 เพิ่มคำศัพท์
                             </a>
@@ -51,9 +51,9 @@
                                 </video>
                             </td>
                             <td width="25%" style="text-align: center">
-                                <form action="/vocabularies/{{$vocabulary->id}}" method="post">
+                                <form action="/admin/vocabularies/{{$vocabulary->id}}" method="post">
                                     {{csrf_field()}}
-                                    <a href="/vocabularies/{{$vocabulary->id}}/edit" class="btn btn-Edit mr-1"> <i class="fas fa-edit"></i></a>
+                                    <a href="/admin/vocabularies/{{$vocabulary->id}}/edit" class="btn btn-Edit mr-1"> <i class="fas fa-edit"></i></a>
                                     <input type="hidden" name="_method" value="DELETE">
                                     <button class="btn btn-Red"><i class="fas fa-trash-alt"></i></button>
                                 </form>
@@ -67,7 +67,7 @@
             </table>
             <div class="offset-4">
                 <div class="buttonAction row">
-                    <a href="/categories"><button class="btn btn-createCate"> ย้อนกลับ</button></a>
+                    <a href="/admin"><button class="btn btn-createCate"> ย้อนกลับ</button></a>
                 </div>
             </div>
 

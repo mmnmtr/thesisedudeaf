@@ -10,10 +10,6 @@ use DB;
 
 class CategoriesController extends Controller
 {
-    public function __construct()
-    {
-        $this->middleware('auth');
-    }
 
     public function index()
     {
@@ -67,7 +63,7 @@ class CategoriesController extends Controller
         $category->category_image = $filenameToStore;
         $category->save();
 
-        return redirect('/categories')->withSuccess('สร้างหมวดหมู่คำศัพท์เรียบร้อย');
+        return redirect('/admin')->withSuccess('สร้างหมวดหมู่คำศัพท์เรียบร้อย');
 
     }
 
@@ -100,7 +96,7 @@ class CategoriesController extends Controller
 //        $category->category_image = $filenameToStore;
         $category->save();
 
-        return redirect('/categories')->withWarning('แก้ไขเรียบร้อย');
+        return redirect('/admin')->with('แก้ไขเรียบร้อย');
 
     }
 
@@ -110,7 +106,7 @@ class CategoriesController extends Controller
         //
         $category = Category::find($id);
         $category->delete();
-        return redirect('/categories')->withError('ลบหมวดหมู่คำศัพท์เรียบร้อย');
+        return redirect('/admin')->with('ลบหมวดหมู่คำศัพท์เรียบร้อย');
     }
 
 }

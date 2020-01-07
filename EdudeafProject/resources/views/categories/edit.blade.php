@@ -14,7 +14,7 @@
             </div>
             <div class="categories_list">
                 <div class="col-md-12">
-                    <form method="POST" action="/categories/{{$category->id}}">
+                    <form method="POST" action="/admin/categories/{{$category->id}}">
                         {{ csrf_field() }}
                         <input type="hidden" name="_method" value="put">
                         <div class="form-group">
@@ -36,7 +36,7 @@
                                 <button type="submit" class="btn btn-createCate"><i class="fas fa-plus-circle"></i> แก้ไข</button>
                             </div>
                             <div class="col-md-5">
-                                <a class="btn btn-teachBack" href="/categories"><i class="fas fa-times-circle"></i> ยกเลิก</a>
+                                <a class="btn btn-teachBack" href="/admin"><i class="fas fa-times-circle"></i> ยกเลิก</a>
                                 {{--<a href="/categories"><button class="btn-teachBack"><i class="fas fa-times-circle"></i> ยกเลิก</button></a>--}}
                             </div>
                         </div>

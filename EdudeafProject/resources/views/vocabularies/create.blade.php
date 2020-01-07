@@ -13,7 +13,7 @@
     </div>
     <div class="categories_list">
         <div class="col-md-12">
-            <form method="POST" action="/vocabularies/store" enctype="multipart/form-data">
+            <form method="POST" action="/admin/vocabularies/store" enctype="multipart/form-data">
                 {{csrf_field()}}
                 <input type="hidden" name="category_id" value="{{$category_id}}">
                 <div class="row">
@@ -81,7 +81,7 @@
                     </div>
                     <div class="col-md-5">
 
-                        <a class="btn btn-teachBack"  href="/categories/{{$category_id}}"><i class="fas fa-times-circle"></i> ยกเลิก</a>
+                        <a class="btn btn-teachBack"  href="/admin/categories/{{$category_id}}"><i class="fas fa-times-circle"></i> ยกเลิก</a>
 
                         {{--<a href="/categories"><button class="btn-teachBack"><i class="fas fa-times-circle"></i> ยกเลิก</button></a>--}}
                     </div>
