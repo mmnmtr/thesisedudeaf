@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 
+
 class StudentController extends Controller
 {
     /**
@@ -15,6 +16,11 @@ class StudentController extends Controller
     {
         //
         return view('studentHome');
+    }
+
+    public function sentenceStudent()
+    {
+        return view('sentence-func2.sentenceSubject');
     }
 
 

@@ -51,7 +51,7 @@
                                     </form>
                                 </button>
 
-                                <button type="submit" class="btn btn-nextStd text-center"><a href="/student/home">เริ่มเลย <i class="fas fa-arrow-right"></i></a></button>
+                                <button type="submit" class="btn btn-nextStd text-center"><a href="/student/home">เริ่มเลย<i class="fas fa-arrow-right"></i></a></button>
                             </div>
                         </div>
                     </form>

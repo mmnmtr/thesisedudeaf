@@ -137,7 +137,30 @@
             ppbutton.innerHTML = "<i class=\"fa fa-play-circle\">";
 
     }
+</script>
+
+<script>
+
+  var theButtons = $(".button");
+
+  $(theButtons).click(function() {
+    $("#theinput").val($(this).val());
+  });
+
+
+ // $( "button" ).click(function() {
+ //   var text = $( this ).text();
+ //   $( "input" ).val( text );
+ // });
+{{--</script>--}}
+//   var showValue = function(val){
+//     document.getElementById('pressed').value = parseInt(val);
+//   }
+
+
 
 </script>
+
+
 </body>
 </html>

@@ -98,4 +98,5 @@ class VocabulariesController extends Controller
         $vocabulary->delete();
         return redirect('/admin/categories/'.$vocabulary->category_id)->with('ลบหมวดหมู่คำศัพท์เรียบร้อย');
     }
+
 }

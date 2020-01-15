@@ -348,3 +348,38 @@ footer {
 /*width: 100%;*/
 /*!*position: absolute!important;*!*/
 /*}*/
+
+
+
+/* sentence function 2*/
+.sentence {
+    /*padding: 0 50px;*/
+}
+.sentenceTitle1 {
+    width: 240px;
+    height: 100px;
+    background-image: url("/../img/menu_wood.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+.sentenceTitle2 {
+    width: 240px;
+    height: 100px;
+    background-image: url("/../img/menu_wood.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    margin:0 auto;
+}
+.sentenceTitle3 {
+    width: 240px;
+    height: 100px;
+    background-image: url("/../img/menu_wood.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    float: right;
+}
+.sentenceTitle1 h2,.sentenceTitle2 h2,.sentenceTitle3 h2 {
+    text-align: center;
+    padding-top: 10%;
+    font-weight: bold;
+}

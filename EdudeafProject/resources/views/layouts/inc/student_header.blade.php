@@ -39,7 +39,7 @@
                             </div>
                             <div class="col-md-4 text-center menuItem">
                                 <img src="/../img/menu_rabbit.png"  alt="">
-                                <a href="#" class="btn menuSen" role="button">แต่งประโยค</a>
+                                <a href="/sentences/subject" class="btn menuSen" role="button">แต่งประโยค</a>
                             </div>
                             <div class="col-md-4 text-center menuItem">
                                 <img src="/../img/menu_frog.png"  alt="">

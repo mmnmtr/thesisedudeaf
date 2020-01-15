@@ -16,12 +16,31 @@ Route::get('/', function () {
 });
 
 Auth::routes();
+//Route::get('logout', 'Auth\LoginController@logout')->name('logout');
 
 Route::get('/home', 'HomeController@index');
 Route::get('/student/home','StudentController@index');
 Route::get('/student','StudentCaegoriesController@index');
 Route::get('/student/{id}','StudentCaegoriesController@showvocab');
 Route::get('/vocabularies/{id}','VocabulariesController@show');
+
+
+Route::get('/sentences', 'StudentController@sentenceStudent');
+Route::get('/sentence/play', 'VocabTestController@index');
+
+
+Route::get('/sentences/subject', 'VocabTestController@createStep1');
+Route::post('/sentences/subject', 'VocabTestController@postCreateStep1');
+
+Route::get('/sentences/verb', 'VocabTestController@createStep2');
+Route::post('/sentences/verb', 'VocabTestController@postCreateStep2');
+
+Route::get('/sentences/object', 'VocabTestController@createStep3');
+Route::post('/sentences/object', 'VocabTestController@postCreateStep3');
+
+Route::get('/sentences/nextPlay', 'VocabTestController@createStep4');
+Route::post('/sentences/play', 'VocabTestController@store');
+
 
 
 
