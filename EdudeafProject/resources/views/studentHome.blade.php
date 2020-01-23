@@ -5,7 +5,7 @@
         <div class="container">
             <div class="bandner">
                 <div class="row">
-                    <div class="col-12 col-md-6 bandnerLeft ">
+                    <div class="col-12 col-md-4 bandnerLeft ">
                         <img src="/../img/logo_edu.gif" alt="">
 z                        <div class="bandnerLeftText slide-right" >
                             <h3>ยินดีต้อนรับเข้าสู่ดินแดนมหัศจรรย์</h3>
@@ -18,7 +18,7 @@ z                        <div class="bandnerLeftText slide-right" >
                         </div>
                     </div>
                     <div class="col-12 col-md-5 offset-1 bandnerRight">
-                        <img src="/../img/character.png" alt="">
+                        <img src="/../img/welcome_model.png" alt="">
                     </div>
                 </div>
             </div>
@@ -48,7 +48,7 @@ z                        <div class="bandnerLeftText slide-right" >
                                 </div>
                             </div>
                             <div class="offset-7">
-                                <img class="assBook" src="/../img/book.png" alt="">
+                                <img class="assBook" src="/../img/bookRed.png" alt="">
                             </div>
                             <div class="offset-4">
                                 <a href="/student"><button class="btn btnfunc1content">เริ่มเลย <i class="fas fa-arrow-circle-right"></i></button></a>
