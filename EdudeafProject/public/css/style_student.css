@@ -7,6 +7,10 @@ body {
   background-size: 100% auto;
 }
 
+textarea:focus, input:focus, a:focus{
+  outline: none;
+}
+
 @font-face {
   font-family: 'nattanan_tsl_fingerspellingRg';
   src: url('/../fonts/nattanan_tsl_fingerspelling-webfont.eot');

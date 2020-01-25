@@ -18,7 +18,7 @@
                   <br>
                   <h1>กรอกเลขที่นักเรียน</h1>
                   <div class="col-md-10 offset-md-1">
-                    <input style="text-align:center" type="text" class="input_studentLogin" name="id"
+                    <input style="text-align:center" type="number" class="input_studentLogin" name="id"
                            value="{{ old('id') }}" required autofocus>
 
                     @if ($errors->has('id'))

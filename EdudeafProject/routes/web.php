@@ -29,7 +29,7 @@ Route::get('/sentences', 'StudentController@sentenceStudent');
 Route::get('/sentence/play', 'VocabTestController@index');
 
 
-Route::get('/sentences/subject', 'VocabTestController@createStep1');
+Route::get('/sentences/subject', 'SentencesController@createStep1');
 Route::post('/sentences/subject', 'VocabTestController@postCreateStep1');
 
 Route::get('/sentences/verb', 'VocabTestController@createStep2');

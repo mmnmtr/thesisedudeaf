@@ -14,6 +14,16 @@ body {
   }
 }
 
+
+textarea:focus, input:focus, a:focus{
+  outline: none;
+}
+input.input_studentLogin::-webkit-outer-spin-button,
+input.input_studentLogin::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+
+}
+
 .header {
   height: 168px;
   width: 100%;

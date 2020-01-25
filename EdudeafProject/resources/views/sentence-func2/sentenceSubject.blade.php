@@ -52,8 +52,9 @@
             </div>
           </div>
         </div>
-        @foreach($testvocabs as $testvocab)
-          <input type="button" class="button" value="{{$testvocab->subject}}"/>
+
+        @foreach($vocabularies as $vocabulary)
+          <input type="button" class="button" value="{{$vocabulary->vocab_word}}"/>
         @endforeach
         <div class="return">
           <div class="col-md-12">

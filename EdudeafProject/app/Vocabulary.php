@@ -11,6 +11,16 @@ class Vocabulary extends Model
     public function category(){
         return $this->belongsTo('App\Category');
     }
+
+    public function subjects(){
+      return $this->hasMany('App\Subject');
+    }
+    public function verbs(){
+      return $this->hasMany('App\Verb');
+    }
+    public function objects(){
+      return $this->hasMany('App\Object');
+    }
 }
 
 
