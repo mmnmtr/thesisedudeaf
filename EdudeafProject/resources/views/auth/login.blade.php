@@ -1,6 +1,7 @@
 @extends('layouts.layout_login')
 @section('content')
 <<<<<<< HEAD
+<<<<<<< HEAD
   <div class="container">
     <div class=" row justify-content-center align-items-center" style="height:100vh">
       <div class="col-8">
@@ -22,6 +23,8 @@
                     <input style="text-align:center" type="number" class="input_studentLogin" name="id"
                            value="{{ old('id') }}" required autofocus>
 =======
+=======
+>>>>>>> parent of 05fc25f... [Css] new
 <div class="container">
     <div class="row justify-content-center align-items-center" style="height:100vh">
         <div class="col-8">
@@ -29,6 +32,9 @@
                 <div class="card-body">
                     <form class="form-horizontal" method="POST" action="{{ route('login') }}">
                         {{ csrf_field() }}
+<<<<<<< HEAD
+>>>>>>> parent of 05fc25f... [Css] new
+=======
 >>>>>>> parent of 05fc25f... [Css] new
 
                         <div class="form-group{{ $errors->has('id') ? ' has-error' : '' }}">
@@ -58,10 +64,17 @@
                         <div class="form-group{{ $errors->has('password') ? ' has-error' : '' }}">
                             <div class="col-md-6">
                                 <input id="password" type="hidden" class="form-control" name="password" value="0">
+<<<<<<< HEAD
 
                             </div>
                         </div>
 
+=======
+
+                            </div>
+                        </div>
+
+>>>>>>> parent of 05fc25f... [Css] new
                         <div class="form-group">
                             <div class="col text-center">
                                 <button type="submit" class="btn btn-loginStd text-center"><i class="fas fa-check"></i> ตกลง</button>

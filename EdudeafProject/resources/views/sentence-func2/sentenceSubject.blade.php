@@ -50,6 +50,7 @@
                 </div>
             </div>
 <<<<<<< HEAD
+<<<<<<< HEAD
           </div>
         </div>
 
@@ -59,6 +60,11 @@
         <div class="return">
           <div class="col-md-12">
             <div class="text-center">
+=======
+              <div class="return">
+                <div class="col-md-12">
+                  <div class="text-center">
+>>>>>>> parent of 05fc25f... [Css] new
 =======
               <div class="return">
                 <div class="col-md-12">
