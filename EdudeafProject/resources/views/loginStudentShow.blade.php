@@ -3,7 +3,7 @@
 <div class="container">
     <div class="row justify-content-center align-items-center" style="height:100vh">
         <div class="col-8">
-            <div class="loginStd">
+            <div class="card">
                 <div class="card-body">
                     <form class="form-horizontal" method="POST" action="{{ route('login') }}">
                         {{ csrf_field() }}
@@ -11,7 +11,7 @@
                         <div class="form-group{{ $errors->has('id') ? ' has-error' : '' }}">
                             <div class="text-center">
                                 <div class="col-md-4 offset-md-4 userShowIcon">
-                                    <img src="/../img/icon_student.png" alt="">
+                                    <img src="/../img/logo_studentLogin.png" alt="">
                                 </div>
                                 <h2 >เข้าสู่ระบบนักเรียน</h2>
                                 <h3>โรงเรียนเศรษฐเสถียร ในพระราชูปถัมภ์</h3>
@@ -36,8 +36,8 @@
                             </div>
                         </div>
 
-                        <div class="form-group row">
-                            <div class="btnActionN">
+                        <div class="form-group">
+                            <div class="col text-center">
                                 <button class="btn btn-logoutStd text-center">
 
                                     <a href="{{ route('logout') }}"
@@ -59,8 +59,5 @@
             </div>
         </div>
     </div>
-  <div class="col-md-2 offset-9">
-    <img class="book" src="/../img/book.png" alt="" style="">
-  </div>
 </div>
 @endsection

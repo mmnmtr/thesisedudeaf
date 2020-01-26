@@ -1,17 +1,16 @@
 body {
-  font-family: 'Kodchasan', sans-serif;
-  background-color: #FCFBF5 !important;
-  background-image: url("../img/bg_std.png");
-  background-repeat: no-repeat;
-  background-position: left bottom;
-  background-size: 100% auto;
-  height: 100vh;
+    font-family: 'Kodchasan', sans-serif;
+    background-color: #FCFBF5!important;
+    background-image: url("../img/bg_studentlogin.png");
+    background-repeat : no-repeat;
+    background-position: left bottom;
+    background-size: 100% auto;
 }
 
 @media (min-width: 1200px) {
-  .container {
-    max-width: 1640px !important;
-  }
+    .container {
+        max-width: 1640px!important;
+    }
 }
 
 
@@ -25,199 +24,155 @@ input.input_studentLogin::-webkit-inner-spin-button {
 }
 
 .header {
-  height: 168px;
-  width: 100%;
-  position: fixed;
-  z-index: 1;
+    height: 168px;
+    width: 100%;
+    position: fixed;
+    z-index: 1;
 }
-
 .navbar-brand {
-  width: 100%;
-  padding-top: 1.3125rem !important;
-  padding-bottom: .3125rem !important;
+    width: 100%;
+    padding-top: 1.3125rem !important;
+    padding-bottom: .3125rem !important;
 }
-
 .navbar-brand img {
-  width: 120%;
-  height: auto;
-  margin-left: -60px;
-  margin-top: 10px;
+    width: 120%;
+    height: auto;
+    margin-left: -60px;
+    margin-top: 10px;
 }
-
 .userShowIcon img {
-  width: 70%;
-  height: auto;
-  border: solid 10px #ffffff;
-  filter: drop-shadow(0px 2px 8px rgba(0, 0, 0, 0.16));
-  z-index: 1;
-  margin-top: -130px;
-  border-radius: 50%;
+    width: 80%;
+    filter: drop-shadow(0px 2px 8px rgba(0,0,0,0.16));
+    z-index: 1;
+    margin-top: -150px;
 }
-
-.loginStd {
-  background-image: url("../img/loginstudent.png");
-  background-repeat: no-repeat;
-  background-size: 100% 100%;
-
-  /*border-radius: 2.25rem !important;*/
-  /*box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.16);*/
-
+.card {
+    width: 100%;
+    height: 765px;
+    border-radius: 2.25rem!important;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.16);
+    background-color: #ffffff;
 }
-
-.loginStd h2 {
-  font-family: 'Kodchasan', sans-serif;
-  font-size: 42px;
-  font-weight: bold;
-  color: #393939;
+.card h2 {
+    font-family: 'Kodchasan', sans-serif;
+    font-size: 42px;
+    font-weight: bold;
+    color: #393939;
+    padding-top: 30px;
 }
-
-.loginStd h3 {
-  font-family: 'Kodchasan', sans-serif;
-  font-size: 29px;
-  font-weight: bold;
-  color: #393939;
-
+.card h3 {
+    font-family: 'Kodchasan', sans-serif;
+    font-size: 29px;
+    font-weight: bold;
+    color: #393939;
+    padding: 10px;
 }
-
-.loginStd h1 {
-  font-family: 'Kodchasan', sans-serif;
-  font-size: 60px;
-  font-weight: bold;
-  color: #393939;
+.card h1 {
+    font-family: 'Kodchasan', sans-serif;
+    font-size: 60px;
+    font-weight: bold;
+    color: #393939;
+    padding-top: 30px;
 }
-
 .input_studentLogin {
-  margin-bottom: 130px;
-  margin-top: 30px;
-  width: 100%;
-  height: 145px;
-  border-radius: 10px;
-  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.16);
-  border: solid 8px #f9d44d;
-  background-color: #ffffff;
-  font-family: 'Kodchasan';
-  font-size: 104px;
-  font-weight: bold;
-  color: #393939;
+    margin-top: 50px;
+    width: 100%;
+    height: 145px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.16);
+    border: solid 8px #f9d44d;
+    background-color: #ffffff;
+    font-family: 'Kodchasan';
+    font-size: 104px;
+    font-weight: bold;
+    color: #393939;
 }
-
 .btn-loginStd {
-  /*margin-left: 30%;*/
-  /*position: absolute;*/
-  /*margin-top: -4%;*/
-  width: 370px;
-  height: 126px;
-  border-radius: 100px !important;
-  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.16);
-  border: solid 7px #ffffff !important;
-  background-color: #3EBBAE;
-  font-family: 'Kodchasan';
-  font-size: 45px !important;
-  font-weight: bold;
-  color: #ffffff;
-}
-img.book {
-  position: absolute;
-  z-index: 10;
-  margin-top: -355px;
-  padding-left: 30px;
+    margin-top: 10px;
+    width: 370px;
+    height: 126px;
+    border-radius: 100px!important;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.16);
+    border: solid 7px #ffffff!important;
+    background-color: #4cac72;
+    font-family: 'Kodchasan';
+    font-size: 45px!important;
+    font-weight: bold;
+    color: #ffffff;
 }
 .footer {
-  height: 60px;
-  font-family: 'Kodchasan';
-  font-size: 20px;
-  position: fixed;
-  left: 0;
-  bottom: 0;
-  width: 100%;
-  background-color: #FAF8F3;
-  color: #9F9D98;
-  text-align: center;
-}
-.footer p {
-  margin-top: 15px;
+    font-family: 'Bai Jamjuree';
+    font-size: 25px;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    color: white;
+    text-align: center;
+    z-index: 10;
 }
 
 .input_studentLoginShow {
-  margin-bottom: 130px;
-  margin-top: 50px;
-  width: 100%;
-  height: 145px;
-  box-shadow: 0 4px 2px -2px rgba(0, 0, 0, 0.16);
-  border-bottom: solid 2px #e8e8e8;
-  background-color: #ffffff;
-  font-family: 'Kodchasan';
-  font-size: 45px;
-  font-weight: bold;
-  color: #393939;
-  bottom: 0;
+    margin-top: 50px;
+    width: 100%;
+    height: 145px;
+    box-shadow: 0 4px 2px -2px  rgba(0, 0, 0, 0.16);
+    border-bottom: solid 2px #e8e8e8;
+    background-color: #ffffff;
+    font-family: 'Kodchasan';
+    font-size: 45px;
+    font-weight: bold;
+    color: #393939;
+    bottom: 0;
 }
-
 .input_studentLoginShow p {
-  padding-top: 50px;
+    padding-top: 50px;
 }
-
 .input_studentLoginShow span {
-  font-size: 45px;
-  font-weight: bold;
-  color: #f15f61;
+    font-size: 45px;
+    font-weight: bold;
+    color: #f15f61;
 }
 
 .btn-logoutStd {
-  margin-top: 10px;
-  width: 370px;
-  height: 126px;
-  border-radius: 100px !important;
-  font-family: 'Kodchasan';
-  font-size: 45px !important;
-  font-weight: bold;
-  border: solid 7px #ffffff !important;
-  color: #ffffff;
-  box-shadow: 0 10px 10px 0 rgba(0, 0, 0, 0.16);
-  border: solid 7px #ffffff;
-  background-color: #54BEEE;
+    margin-top: 10px;
+    width: 370px;
+    height: 126px;
+    border-radius: 100px!important;
+    font-family: 'Kodchasan';
+    font-size: 45px!important;
+    font-weight: bold;
+    border: solid 7px #ffffff!important;
+    color: #ffffff;
+    box-shadow: 0 10px 10px 0 rgba(0, 0, 0, 0.16);
+    border: solid 7px #ffffff;
+    background-color: #f9c01a;
 }
-
 .btn-logoutStd a {
-  color: #ffffff;
-  text-decoration: none !important;
+    color: #ffffff;
+    text-decoration: none!important;
 }
-
 .btn-logoutStd a:hover {
-  color: #ffffff;
+    color: #ffffff;
 }
-
 .btn-nextStd {
-  margin-left: 100px;
-  margin-top: 10px;
-  width: 370px;
-  height: 126px;
-  border-radius: 100px !important;
-  font-family: 'Kodchasan';
-  font-size: 45px !important;
-  font-weight: bold;
-  border: solid 7px #ffffff !important;
-  color: #ffffff;
-  box-shadow: 0 10px 10px 0 rgba(0, 0, 0, 0.16);
-  border: solid 7px #ffffff;
-  background-color: #3EBBAE;
+    margin-top: 10px;
+    width: 370px;
+    height: 126px;
+    border-radius: 100px!important;
+    font-family: 'Kodchasan';
+    font-size: 45px!important;
+    font-weight: bold;
+    border: solid 7px #ffffff!important;
+    color: #ffffff;
+    box-shadow: 0 10px 10px 0 rgba(0, 0, 0, 0.16);
+    border: solid 7px #ffffff;
+    background-color: #f15f61;
 }
-
 .btn-nextStd a {
-  color: #ffffff;
-  text-decoration: none !important;
+    color: #ffffff;
+    text-decoration: none!important;
 }
-
 .btn-nextStd a:hover {
-  color: #ffffff;
-}
-.btnAction {
-  margin-left: 30%;
-  position: absolute;
-  margin-top: -4%;
-}
-.btnActionN {
-  margin-left: 10%;
-  position: absolute;
-  margin-top: -4%;
+    color: #ffffff;
 }

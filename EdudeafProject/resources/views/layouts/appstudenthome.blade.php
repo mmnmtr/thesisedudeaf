@@ -16,14 +16,14 @@
 </div>
 <footer>
     <div class="footer">
-        <img class="bgFooter" src="/../img/footer_bg.png" alt="">
+        <img src="/../img/footer_camp.png" alt="">
         <div class="copyright">
             <div class="text-center">
                 <h3> copyright © 2019 | eduDeaf.com</h3>
             </div>
         </div>
         <div class="container">
-            <div class="col-md-offset-8 talkBox">
+            <div class="btn talkBox">
                     <h3>สนุกกันเปล่า ?</h3>
 
                     <p>
@@ -35,17 +35,16 @@
                     </p>
             </div>
             <div class="col-md-4 offset-1">
+                <div class="modelFooter">
 
+                    <img src="/../img/halo.png" alt="">
+
+                </div>
 
             </div>
 
             {{--<hr>--}}
         </div>
-      <div class="modelFooter">
-
-        <img src="/../img/footer_prop.png" alt="">
-
-      </div>
     </div>
 
 </footer>

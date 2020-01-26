@@ -20,19 +20,20 @@
 <div class=" mt-10">
     @yield('content')
 </div>
-
-
+<div class="content_bg">
+    <img src="/../img/fakeface_bg2.png" alt="">
+</div>
 <footer>
-  <div class="footer">
-    <div class="col-md-2 offset-md-1">
-      <img class="bgFooter" src="/../img/dog.png" alt="">
+    <div class="footer">
+        <div class="copyright">
+            <div class="text-center">
+                <h3> copyright © 2019 | eduDeaf.com</h3>
+            </div>
+        </div>
+        <div class="container">
+            {{--<hr>--}}
+        </div>
     </div>
-    <div class="copyright">
-      <div class="text-center">
-        <h3> copyright © 2019 | eduDeaf.com</h3>
-      </div>
-    </div>
-  </div>
 
 </footer>
 

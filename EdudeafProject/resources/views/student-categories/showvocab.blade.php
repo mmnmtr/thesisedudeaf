@@ -4,7 +4,7 @@
     <div class="function">
         <div class="container">
             <div class="row">
-{{--                <img class="bg" src="/../img/category_map.png" alt="">--}}
+                <img class="bg" src="/../img/category_map.png" alt="">
                 <div class="functitle col col-md-12">
                     <div class="row">
                         <div class="col-md-12">
@@ -41,15 +41,16 @@
                 </div>
             </div>
 
-            <div class="return" style="margin-top: -150px; position: absolute;padding-left: 535px;">
+            <div class="return">
                 <div class="col-md-12">
                     <div class="text-center">
                         <a href="/student">
-                            <button class="btn btn-Stdback"><h2><i class="fas fa-arrow-left"></i> ย้อนกลับ</h2></button>
+                            <button class="btn btn-Stdback"><h2><i class="fas fa-redo-alt"></i> ย้อนกลับ</h2></button>
                         </a>
                     </div>
                 </div>
             </div>
+
         </div>
     </div>
 

@@ -2,11 +2,10 @@
 body {
     font-family: 'Kodchasan', sans-serif;
     background-color: #FCFBF5;
-    background-image: url("../img/bg_login.png");
+    background-image: url("../img/bg_camp.png");
     background-repeat : no-repeat;
-    background-position: left;
+    background-position: left 280px;
     background-size: 100% auto;
-    height: 100vh;
 }
 h1,h2,h3,h4,p,span {
     font-family: 'Kodchasan', sans-serif;
@@ -35,14 +34,17 @@ h1,h2,h3,h4,p,span {
 .navbar-brand img {
     width: 120%;
     height: auto;
-    margin-left: -50px;
+    margin-left: -60px;
     margin-top: 10px;
 }
 .bandner {
     padding-top: 435px;
 }
+.bandnerRight {
+    padding-left: -50px;
+}
 .logoLogin img {
-    width: 565px;
+    width: 105%;
     height: auto;
 }
 .logoLogin h1 {

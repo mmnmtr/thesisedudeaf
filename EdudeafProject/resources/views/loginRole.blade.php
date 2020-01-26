@@ -5,11 +5,11 @@
             <div class="row">
                 <div class="col-12 col-md-6 bandnerLeft ">
                     z
-                    <p>ยินดีต้อนรับเข้าสู่ “ EduDeaf ”
-                      <br>
-                      มาสนุกเพลิดเพลินกับการเรียนรู้
-                      <br>
-                      มาเริ่มต้นกันเลย !
+                    <p>ยินดีต้อนรับเข้าสู่ EduDeaf
+                        <br>
+                        มาสนุกเพลิดเพลินกับการเรียนรู้
+                        <br>
+                        มาเริ่มต้นกันเลย :-)
                     </p>
                     <div class="row">
                         <div class="col-md-6 text-center">
@@ -27,7 +27,7 @@
                     </div>
                 </div>
                 <div class="col-12 col-md-5 offset-1 bandnerRight">
-                    <img src="/../img/welcome_model.png" alt="">
+                    <img src="img/character.png" alt="">
                 </div>
             </div>
         </div>
