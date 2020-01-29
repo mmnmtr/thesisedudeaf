@@ -2,6 +2,8 @@
 
 namespace App\Http\Controllers;
 
+use Illuminate\Support\Facades\Auth;
+use App\Sentence;
 use Illuminate\Http\Request;
 use App\Vocabulary;
 
@@ -11,115 +13,108 @@ class SentencesController extends Controller
 {
   public function index(Request $request)
   {
-//    $request->session()->forget('testvocab');
-//    $testvocabs = Testvocab::all();
-//    return view('sentence-func2.sentencePlay',compact('testvocabs',$testvocabs));
+    $request->session()->forget('sentence');
+    $sentences = Sentence::all();
+    return view('sentence-func2.sentencePlay',compact('sentences',$sentences));
   }
 
   public function createStep1(Request $request)
   {
-//    $testvocab = $request->session()->get('testvocab');
-
-//    $testvocabs = Testvocab::all();
-//    return view('sentence-func2.sentenceSubject',compact('testvocabs', $testvocabs));
 
 
-    $vocabularies = Vocabulary::with('Subjects')->get();
-//    return view('student-categories.index',compact('Vocabularies'));
 
-//    $vocabularies = DB::table('vocabularies')
+    $sentence = $request->session()->get('sentence');
+    $vocabularies = DB::table('vocabularies')
 //      ->join('subjects', 'vocabularies.id', '=', 'subjects.vocabulary_id')
 //      ->join('sentences', 'subjects.id', '=', 'sentences.subject_id')
-//      ->select('vocabularies.vocab_word')
-//      ->get();
+      ->select('vocabularies.*')
+      ->get();
 
-    return view('sentence-func2.sentenceSubject',compact('vocabularies'));
+    return view('sentence-func2.sentenceSubject',compact('vocabularies',$vocabularies,'sentence',$sentence));
 
 
 
 
 
   }
-////$vocabulary = Vocabulary::all();
-//////    $testvocab = $request->session()->get('testvocab');
-////return view('',compact('vocabulary');
-//
   public function postCreateStep1(Request $request)
   {
 
     $this->validate($request,[
-      'subject' => 'required'
+      'subject_id' => 'required'
     ]);
 
-    if(empty($request->session()->get('testvocab'))){
-      $testvocab = new Testvocab();
-      $testvocab->subject = $request->input('subject');
-      $request->session()->put('testvocab', $testvocab);
+    if(empty($request->session()->get('sentence'))){
+      $sentence = new Sentence();
+      $sentence->subject_id = $request->input('subject_id');
+      $request->session()->put('sentence', $sentence);
     }else{
-      $testvocab = $request->session()->get('testvocab');
-      $testvocab->subject = $request->input('subject');
+      $sentence = $request->session()->get('sentence');
+      $sentence->subject_id = $request->input('subject_id');
 //      $testvocab->fill($fill1);
-      $request->session()->put('testvocab', $testvocab);
+      $request->session()->put('sentence', $sentence);
     }
     return redirect('/sentences/verb');
   }
 //
-//  public function createStep2(Request $request)
-//  {
-//    $testvocab = $request->session()->get('testvocab');
-//    return view('sentence-func2.sentenceVerb',compact('testvocab', $testvocab));
-//  }
-//  public function postCreateStep2(Request $request)
-//  {
-//    $testvocab = $request->session()->get('testvocab');
-//    if(!isset($testvocab->varb)) {
-//      $this->validate($request,[
-//        'verb' => 'required'
-//      ]);
+  public function createStep2(Request $request)
+  {
+
+    $sentence = $request->session()->get('sentence');
+    return view('sentence-func2.sentenceVerb',compact('sentence', $sentence));
+  }
+  public function postCreateStep2(Request $request)
+  {
+    $sentence = $request->session()->get('sentence');
+    if(!isset($sentence->verb_id)) {
+      $this->validate($request,[
+        'verb_id' => 'required'
+      ]);
+
+      $sentence = $request->session()->get('sentence');
+
+      $sentence->verb_id = $request->input('verb_id');
+      $request->session()->put('sentence', $sentence);
+    }
+    return redirect('/sentences/object');
+
+  }
 //
-//      $testvocab = $request->session()->get('testvocab');
-//
-//      $testvocab->verb = $request->input('verb');
-//      $request->session()->put('testvocab', $testvocab);
-//    }
-//    return redirect('/sentences/object');
-//
-//  }
-//
-//  public function createStep3(Request $request)
-//  {
-//    $testvocab = $request->session()->get('testvocab');
-//    return view('sentence-func2.sentenceObject',compact('testvocab', $testvocab));
-//  }
-//  public function postCreateStep3(Request $request)
-//  {
-//    $testvocab = $request->session()->get('testvocab');
-//    if(!isset($testvocab->varb)) {
-//      $this->validate($request,[
-//        'object' => 'required'
-//      ]);
-//
-//      $testvocab = $request->session()->get('testvocab');
-//
-//      $testvocab->object = $request->input('object');
-//      $request->session()->put('testvocab', $testvocab);
-//    }
-//
-//    return redirect('/sentences/nextPlay');
-//
-//  }
-//
-//  public function createStep4(Request $request)
-//  {
-//    $testvocab = $request->session()->get('testvocab');
-//    return view('sentence-func2.sentenceNextPlay',compact('testvocab',$testvocab));
-//  }
-//
-//  public function store(Request $request)
-//  {
-//    $testvocab = $request->session()->get('testvocab');
-//    $testvocab->save();
-//    return redirect('/sentence/play');
-//  }
+  public function createStep3(Request $request)
+  {
+    $sentence = $request->session()->get('sentence');
+    return view('sentence-func2.sentenceObject',compact('sentence', $sentence));
+  }
+  public function postCreateStep3(Request $request)
+  {
+    $sentence = $request->session()->get('sentence');
+    if(!isset($sentence->object_id)) {
+      $this->validate($request,[
+        'object_id' => 'required'
+      ]);
+
+      $sentence = $request->session()->get('sentence');
+
+      $sentence->object_id = $request->input('object_id');
+      $request->session()->put('sentence', $sentence);
+    }
+
+    return redirect('/sentences/nextPlay');
+
+  }
+
+  public function createStep4(Request $request)
+  {
+    $sentence = $request->session()->get('sentence');
+    return view('sentence-func2.sentenceNextPlay',compact('sentence',$sentence));
+  }
+
+  public function store( Request $request)
+  {
+    $sentence = $request->session()->get('sentence');
+    $sentence->user_id = Auth::id();
+    $sentence->save();
+    return redirect('/sentence/play');
+  }
 
 }

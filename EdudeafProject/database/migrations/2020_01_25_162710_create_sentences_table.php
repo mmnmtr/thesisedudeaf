@@ -15,9 +15,14 @@ class CreateSentencesTable extends Migration
     {
         Schema::create('sentences', function (Blueprint $table) {
             $table->increments('id');
-            $table->integer('subject_id');
-            $table->integer('verb_id');
-            $table->integer('object_id');
+
+          $table->integer('subject_id')->unsigned();
+          $table->foreign('subject_id')->references('id')->on('vocabularies')->onDelete('cascade');
+          $table->string('verb');
+          $table->integer('verb_id')->unsigned();
+          $table->foreign('verb_id')->references('id')->on('vocabularies')->onDelete('cascade');
+          $table->integer('object_id')->unsigned();
+          $table->foreign('object_id')->references('id')->on('vocabularies')->onDelete('cascade');
             $table->integer('user_id');
             $table->timestamps();
         });

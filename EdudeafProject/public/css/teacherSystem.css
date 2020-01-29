@@ -285,6 +285,12 @@ body{
 }
 
 
+thead {
+  border-radius: 8px;
+  box-shadow: 0 0 3px 0 #b2b2b2;
+  background: #FFFFFF;
+}
+
 
 /*functitle*/
 .functitle {
@@ -516,6 +522,30 @@ table td, .table th {
     background-color: #3078ff;
     color: #ffffff;
 }
+
+
+/*sentence show*/
+.btn-sentenceMore {
+  width: 215px;
+  height: 50px;
+  border: solid 1px #c6ccd8;
+  background-color: #ffffff;
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
+  border-radius: 50px;
+  font-weight: bold;
+}
+.btn-sentenceMore {
+  color: #abb1bc;
+}
+.btn-sentenceMore:hover {
+  border: solid 1px #c6ccd8;
+  background-color: #3078ff;
+  color: #ffffff;
+}
+
+
+
 
 .footer {
     font-family: 'Bai Jamjuree';

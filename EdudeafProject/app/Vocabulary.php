@@ -13,13 +13,13 @@ class Vocabulary extends Model
     }
 
     public function subjects(){
-      return $this->hasMany('App\Subject');
+      return $this->belongsTo('App\Subject','subject_id');
     }
     public function verbs(){
-      return $this->hasMany('App\Verb');
+      return $this->belongsTo('App\Verb','verb_id');
     }
     public function objects(){
-      return $this->hasMany('App\Object');
+      return $this->belongsTo('App\Object','verb_id');
     }
 }
 

@@ -20,20 +20,19 @@
 <div class=" mt-10">
     @yield('content')
 </div>
-<div class="content_bg">
-    <img src="/../img/fakeface_bg2.png" alt="">
-</div>
+
+
 <footer>
-    <div class="footer">
-        <div class="copyright">
-            <div class="text-center">
-                <h3> copyright © 2019 | eduDeaf.com</h3>
-            </div>
-        </div>
-        <div class="container">
-            {{--<hr>--}}
-        </div>
+  <div class="footer">
+    <div class="col-md-2 offset-md-1">
+      <img class="bgFooter" src="/../img/dog.png" alt="">
     </div>
+    <div class="copyright">
+      <div class="text-center">
+        <h3> copyright © 2019 | eduDeaf.com</h3>
+      </div>
+    </div>
+  </div>
 
 </footer>
 
@@ -43,6 +42,7 @@
 <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
 <script>
+
     $(".regular").slick({
         dots: false,
         infinite: true,
@@ -60,6 +60,25 @@
         prevArrow:"<img class='a-left control-c prev slick-prev' src='/../img/left.png'>",
         nextArrow:"<img class='a-right control-c next slick-next' src='/../img/right.png'>"
     });
+</script>
+<script>
+  $(".filtering").slick({
+    dots: false,
+    infinite: true,
+    slidesPerRow: 5,
+    rows: 2,
+    responsive: [
+      {
+        breakpoint: 478,
+        settings: {
+          slidesPerRow: 1,
+          rows: 1,
+        }
+      }
+    ],
+    prevArrow:"<img class='a-left control-c prev slick-prev' src='/../img/left.png'>",
+    nextArrow:"<img class='a-right control-c next slick-next' src='/../img/right.png'>"
+  });
 </script>
 
 
@@ -145,8 +164,13 @@
 
   $(theButtons).click(function() {
     $("#theinput").val($(this).val());
+    $("#theid").val($(this).attr("data-id"));
   });
 </script>
+
+
+
+
 
 
 </body>

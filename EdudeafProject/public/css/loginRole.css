@@ -2,10 +2,12 @@
 body {
     font-family: 'Kodchasan', sans-serif;
     background-color: #FCFBF5;
-    background-image: url("../img/bg_camp.png");
+    background-image: url("../img/bg_login.png");
+  /*background-image: url("https://sv1.picz.in.th/images/2020/01/29/RGEiHy.png");*/
     background-repeat : no-repeat;
-    background-position: left 280px;
+    background-position: left;
     background-size: 100% auto;
+    height: 100vh;
 }
 h1,h2,h3,h4,p,span {
     font-family: 'Kodchasan', sans-serif;
@@ -34,17 +36,14 @@ h1,h2,h3,h4,p,span {
 .navbar-brand img {
     width: 120%;
     height: auto;
-    margin-left: -60px;
+    margin-left: -50px;
     margin-top: 10px;
 }
 .bandner {
     padding-top: 435px;
 }
-.bandnerRight {
-    padding-left: -50px;
-}
 .logoLogin img {
-    width: 105%;
+    width: 565px;
     height: auto;
 }
 .logoLogin h1 {

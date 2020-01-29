@@ -1,88 +1,51 @@
 @extends('layouts.appstudent')
 @section('content')
 
-
-    <div class="function">
-        <div class="container">
+  <div class="function">
+    <div class="container">
+      <div class="row">
+        <div class="functitle col col-md-12">
+          <div class="1" style="padding-top: 115px">
             <div class="row">
-                <img class="bg" src="/../img/category_map.png" alt="">
-                <div class="functitle col col-md-12">
-                    <div class="row">
-                        <div class="col-md-12">
-                            <h1 class="text-center">
-                                {{--{{$category->category_name}}--}}
-                            </h1>
-                        </div>
-                        <div class="categories_list">
-                            <div class="row">
-
-                                <div class="col-md-4 ">
-                                    <div class="wordPhoto mb-4 box-shadow">
-                                        <div class="text-center">
-                                            <img src="/uploads/vocabularies/{{$vocabulary->category_id}}/{{$vocabulary->vocab_photoReal}}" class="card-img-top" alt="">
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="videoShow col-md-8">
-                                    {{--<img class="videoBg" src="/../img/video_wood.png" alt="">--}}
-
-                                    {{--<video id="myvid" width="100%">--}}
-                                        {{--<source src="/uploads/vocabularies/{{$vocabulary->category_id}}/{{$vocabulary->vocab_video}}" type="video/mp4">--}}
-                                    {{--</video>--}}
-                                    {{--<button id="vidbutton"><i class="fas fa-play-circle"></i></button>--}}
-
-                                    <video id="my-video" class="video-js" controls preload="auto" width="100%" height="auto" data-setup="{}">
-                                        <source src="/uploads/vocabularies/{{$vocabulary->category_id}}/{{$vocabulary->vocab_video}}" type='video/mp4'>
-                                    </video>
-                                </div>
-
-                            </div>
-                            <div class="wordShow">
-                                <div class="row">
-                                    <div class="col-md-6">
-                                        <div class="text-center">
-                                            <button class="showTextWord">
-                                                <h2 class="textLang">{{$vocabulary->vocab_word}}</h2>
-                                            </button>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-6">
-                                        <div class="text-center">
-                                            <button class="showTextWord">
-                                                <h2 class="signLang">{{$vocabulary->vocab_word}}</h2>
-                                            </button>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="titleBox row">
-                                    <div class="col-md-6">
-                                        <div class="text-center">
-                                            <button class="btn btn-titleTh">คำภาษาไทย</button>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-6">
-                                        <div class="text-center">
-                                            <button class="btn btn-titleSign">แบบสะกดนิ้วมือ</button>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+              <div class="col-md-6">
+                <div class="videoShow col-md-8">
+                   <video id="my-video" class="video-js" controls preload="auto" width="675" height="858px" data-setup="{}">
+                      <source src="/uploads/vocabularies/{{$vocabulary->category_id}}/{{$vocabulary->vocab_video}}" type='video/mp4'>
+                    </video>
                 </div>
-            </div>
-            <div class="return">
-                <div class="col-md-12">
-                    <div class="text-center">
-                        <a href="/student/{{$vocabulary->category_id}}">
-                            <button class="btn btn-Stdback"><h2><i class="fas fa-redo-alt"></i> ย้อนกลับ</h2></button>
-                        </a>
+              </div>
+              <div class="col-md-6" style="padding: 15px">
+                <div class="cardImg box-shadow">
+                  <div class="text-center">
+                    <div class="wordPhoto">
+                      <div class="text-center">
+                        <img src="/uploads/vocabularies/{{$vocabulary->category_id}}/{{$vocabulary->vocab_photoReal}}" class="card-img-top" alt="">
+                      </div>
                     </div>
+                    <div class="cardWord">
+                      <h4>{{$vocabulary->vocab_word}}</h4>
+                    </div>
+                  </div>
                 </div>
+                  <div class="showTextWord">
+                    <h2 class="signLang">{{$vocabulary->vocab_word}}</h2>
+                  </div>
+                </div>
+
+              </div>
             </div>
+          <div class="return">
+            <div class="col-md-12">
+              <div class="text-center">
+                <a href="/student/{{$vocabulary->category_id}}">
+                  <button class="btn btn-Stdback"><h2><i class="fas fa-redo-alt"></i> ย้อนกลับ</h2></button>
+                </a>
+              </div>
+            </div>
+          </div>
+          </div>
         </div>
+      </div>
     </div>
-
-
 
 @endsection

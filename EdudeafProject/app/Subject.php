@@ -7,8 +7,8 @@ use Illuminate\Database\Eloquent\Model;
 class Subject extends Model
 {
     //
-  public function vocabulary(){
-    return $this->belongsTo('App\Vocabulary');
+  public function vocabularys(){
+    return $this->belongsToMany('App\Vocabulary');
   }
 
   public function sentence()

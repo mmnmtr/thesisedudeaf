@@ -26,4 +26,7 @@ class User extends Authenticatable
     protected $hidden = [
         'password', 'remember_token',
     ];
+//  public function subjects(){
+//    return $this->belongsTo('App\Subject','subject_id');
+//  }
 }

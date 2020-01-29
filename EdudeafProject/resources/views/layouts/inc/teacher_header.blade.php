@@ -70,17 +70,17 @@
                     <a href="/"><span class="icon-menu fa-stack fa-lg pull-left"><i class="fas fa-home "></i></span>&nbsp;&nbsp; หน้าหลัก</a>
                 </li>
                 <li>
-                    <a class="active" href="/categories"><span class="icon-menu fa-stack fa-lg pull-left"><i class="fas fa-align-justify"></i></span>&nbsp;&nbsp; เพิ่มหมวดหมู่คำศัพท์</a>
+                    <a class="active" href="/admin"><span class="icon-menu fa-stack fa-lg pull-left"><i class="fas fa-align-justify"></i></span>&nbsp;&nbsp; เพิ่มหมวดหมู่คำศัพท์</a>
                 </li>
                 <li>
-                    <a href="#"><span class="icon-menu fa-stack fa-lg pull-left"><i class="fas fa-spell-check"></i></span>&nbsp;&nbsp; แต่งประโยค</a>
+                    <a href="/admin/sentences"><span class="icon-menu fa-stack fa-lg pull-left"><i class="fas fa-spell-check"></i></span>&nbsp;&nbsp; แต่งประโยค</a>
                 </li>
                 <li>
-                    <a href="#"> <span class="icon-menu fa-stack fa-lg pull-left"><i class="fas fa-user-edit"></i></span>&nbsp;&nbsp; เพิ่มแบบฝึกหัด</a>
+                    <a href="/admin/exercises"> <span class="icon-menu fa-stack fa-lg pull-left"><i class="fas fa-user-edit"></i></span>&nbsp;&nbsp; เพิ่มแบบฝึกหัด</a>
                 </li>
 
                 <li>
-                    <a href="#"><span class="icon-menu fa-stack fa-lg pull-left"><i class="fas fa-user-graduate "></i></span>&nbsp;&nbsp; ข้อมูลนักเรียน</a>
+                    <a href="/admin/students"><span class="icon-menu fa-stack fa-lg pull-left"><i class="fas fa-user-graduate "></i></span>&nbsp;&nbsp; ข้อมูลนักเรียน</a>
                 </li>
             </ul>
         </div>

@@ -11,6 +11,7 @@
 |
 */
 
+
 Route::get('/', function () {
     return view('loginRole');
 });
@@ -25,11 +26,11 @@ Route::get('/student/{id}','StudentCaegoriesController@showvocab');
 Route::get('/vocabularies/{id}','VocabulariesController@show');
 
 
-Route::get('/sentences', 'StudentController@sentenceStudent');
+Route::get('/sentences', 'VocabTestController@sentenceStudent');
 Route::get('/sentence/play', 'VocabTestController@index');
 
 
-Route::get('/sentences/subject', 'SentencesController@createStep1');
+Route::get('/sentences/subject', 'VocabTestController@createStep1');
 Route::post('/sentences/subject', 'VocabTestController@postCreateStep1');
 
 Route::get('/sentences/verb', 'VocabTestController@createStep2');
@@ -66,6 +67,9 @@ Route::prefix('admin')->group(function() {
     Route::put('/vocabularies/{category_id}','VocabulariesController@update');
     Route::get('/vocabularies/{id}/edit','VocabulariesController@edit');
     Route::delete('/vocabularies/{id}','VocabulariesController@destroy');
+
+    Route::get('/sentences', 'VocabTestController@backend');
+    Route::get('/sentences/{id}','VocabTestController@backendShow');
 
 //
 //
