@@ -679,6 +679,28 @@ input.objField {
 }
 
 
+.functitleRed {
+  width: 100%;
+  height: 88vh;
+  box-shadow: 0 0 99px 0 rgba(0, 0, 0, 0.08);
+  border-left: solid 20px #ef5f61;
+  border-right: solid 20px #ef5f61;
+  background-color: #fcfbf5;
+  /*background-image: url("../img/category_map.png");*/
+  /*background-repeat : no-repeat;*/
+  /*background-size: cover;*/
+  /*margin-top: -980px;*/
+}
+
+.functitleRed h1 {
+  font-size: 36px;
+  font-weight: bold;
+  color: #52341c;
+  margin-top: 60px;
+}
+
+
+
 
 
 
@@ -717,4 +739,35 @@ footer {
   border: 0;
   border-top: 15px solid #ffffff;
   border-radius: 25px 25px 25px 25px;
+}
+
+
+.carousel-fade .carousel-item {
+  opacity: 0;
+  transition-duration: .6s;
+  transition-property: opacity;
+}
+
+.carousel-fade  .carousel-item.active,
+.carousel-fade  .carousel-item-next.carousel-item-left,
+.carousel-fade  .carousel-item-prev.carousel-item-right {
+  opacity: 1;
+}
+
+.carousel-fade .active.carousel-item-left,
+.carousel-fade  .active.carousel-item-right {
+  opacity: 0;
+}
+
+.carousel-fade  .carousel-item-next,
+.carousel-fade .carousel-item-prev,
+.carousel-fade .carousel-item.active,
+.carousel-fade .active.carousel-item-left,
+.carousel-fade  .active.carousel-item-prev {
+  transform: translateX(0);
+  transform: translate3d(0, 0, 0);
+}
+
+:focus {
+  outline: none;
 }
