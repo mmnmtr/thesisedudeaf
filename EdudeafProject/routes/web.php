@@ -44,6 +44,17 @@ Route::post('/sentences/play', 'VocabTestController@store');
 
 
 
+Route::get('/exercises',function () {
+  return view('exercise-student.exercisetypes');
+});
+Route::get('/exercises/type/1',function () {
+  return view('exercise-student.exercisetypesexercise');
+});
+Route::get('/exercises/type/1/exercise',function () {
+  return view('exercise-student.exercisetypesexercise_1');
+});
+
+
 
 
 Route::prefix('admin')->group(function() {
@@ -73,5 +84,18 @@ Route::prefix('admin')->group(function() {
 
 //
 //
+    Route::get('/exercises','ExerciseController@index');
+    Route::get('/exercises/create','ExerciseController@create');
+    Route::post('/exercises/store','ExerciseController@store');
+
+    Route::get('/exercises/create/{id}','ExerciseController@exerciceType1');
+  Route::get('/exercises/create/{id}','ExerciseController@exerciceType2');
+
+
+  Route::get('/student/create','StudentController@create');
+  Route::post('/student/store','StudentController@store');
+
+
+
 
 });

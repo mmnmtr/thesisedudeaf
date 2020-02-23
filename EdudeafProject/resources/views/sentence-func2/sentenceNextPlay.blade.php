@@ -1,5 +1,10 @@
 @extends('layouts.appstudent')
 @section('content')
+  <style>
+    .footer img {
+      display: none;
+    }
+  </style>
   <div class="function">
     <div class="container">
       <form action="/sentences/play" method="post" >

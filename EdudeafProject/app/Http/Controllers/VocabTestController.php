@@ -120,7 +120,7 @@ class VocabTestController extends Controller
       ->orderBy('id', 'desc')
       ->take(10)
       ->get()
-      ->random(2);
+      ->random(4);
     $testvocab = $request->session()->get('testvocab');
     return view('sentence-func2.sentenceObject',compact('testvocab', $testvocab,'vocabularies', $vocabularies));
   }

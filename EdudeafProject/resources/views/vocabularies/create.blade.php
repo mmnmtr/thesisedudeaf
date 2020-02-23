@@ -65,7 +65,7 @@
                             <label for="due" class="padding40 categoryTitle control-label">| วิดีโอภาษามือ</label>
                             <div class="padding40">
                                 <div class="customFile rightBtn" data-display="right" data-label="&#xf093; &nbsp; อัพโหลด">
-                                    <span class="selectedFile">อัพโหลดรูปภาพ .jpeg , .png </span>
+                                    <span class="selectedFile">อัพโหลดวีดีโอ </span>
                                     <input type="file" name="vocab_video" value="Profession" />
                                 </div>
                             </div>

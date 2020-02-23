@@ -305,9 +305,8 @@ h2.textLang {
 h2.signLang {
   font-family: 'nattanan_tsl_fingerspellingRg';
   font-size: 107px;
-  font-weight: bold;
   color: #453324;
-  padding: 40px;
+  padding: 25px;
 }
 
 .titleBox {

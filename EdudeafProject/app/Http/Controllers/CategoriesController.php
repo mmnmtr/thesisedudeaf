@@ -52,7 +52,7 @@ class CategoriesController extends Controller
 
         $extension = $request->file('category_image')->getClientOriginalName();
 
-        //create new file name
+        //create new file namehj
         $filenameToStore = Date('YmdHis').'_'.$extension;
 
         //upload

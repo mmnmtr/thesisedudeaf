@@ -4,10 +4,10 @@
             <div class="container">
                 <div class="row">
                     <div class="col-12 col-md-2">
-                        <a class="navbar-brand" href="/user">
+                        <a class="navbar-brand" href="/">
                             <img src="/../img/logo_edudeaf.png" alt="">
                         </a>
-                        
+
 
                         @if (Auth::guest())
                             <li><a href="{{ route('login') }}">Login</a></li>

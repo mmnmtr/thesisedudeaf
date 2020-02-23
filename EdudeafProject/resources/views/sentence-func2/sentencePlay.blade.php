@@ -21,8 +21,14 @@
     .return{
       padding-top: 90px;
     }
-  </style>
+    .footer img {
+      display: none;
+    }
 
+  </style>
+  <script !src="">
+
+  </script>
 
   <div class="function">
     <div class="container">
@@ -30,41 +36,50 @@
         @foreach($testvocabs as $testvocab)
         <div class="functitleRed col col-md-12">
           <div class="1" style="padding-top: 105px">
+
+{{--            <input id="file" type="file" multiple />--}}
+
+{{--            <button onclick="play()">play</button>--}}
+
+
+{{--            <video width="100%" height="auto">--}}
+{{--              <source src="/uploads/vocabularies/{{$testvocab->subject_cid}}/{{$testvocab->subject_v}}" type='video/mp4'>--}}
+{{--            </video>--}}
+{{--            <video width="100%" height="auto">--}}
+{{--              <source src="/uploads/vocabularies/{{$testvocab->verb_cid}}/{{$testvocab->verb_v}}" type='video/mp4'>--}}
+{{--            </video>--}}
+{{--            <video width="100%" height="auto">--}}
+{{--              <source src="/uploads/vocabularies/{{$testvocab->obj_cid}}/{{$testvocab->obj_v}}" type='video/mp4'>--}}
+{{--            </video>--}}
+
             <div class="row">
               <div class="col-md-5">
                 <div class="videoShow col-md-12">
-                  <div id="carouselExampleIndicators" class="carousel slide carousel-fade" data-ride="carousel" data-interval="5000">
-                    <ol class="carousel-indicators">
-                      <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-                      <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-                      <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-                    </ol>
-                    <div class="carousel-inner">
-                      <div class="carousel-item active">
-                        <video id="my-video" class="video-js" controls preload="auto" width="100%" height="auto" data-setup="{}">
-                          <source src="/uploads/vocabularies/{{$testvocab->subject_cid}}/{{$testvocab->subject_v}}" type='video/mp4'>
-                        </video>
-                      </div>
-                      <div class="carousel-item">
-                        <video id="my-video" class="video-js" controls preload="auto" width="100%" height="auto" data-setup="{}">
-                          <source src="/uploads/vocabularies/{{$testvocab->verb_cid}}/{{$testvocab->verb_v}}" type='video/mp4'>
-                        </video>
-                      </div>
-                      <div class="carousel-item">
-                        <video id="my-video" class="video-js" controls preload="auto" width="100%" height="auto" data-setup="{}">
-                          <source src="/uploads/vocabularies/{{$testvocab->obj_cid}}/{{$testvocab->obj_v}}" type='video/mp4'>
-                        </video>
-                      </div>
-                    </div>
-                    <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                      <span class="sr-only">Previous</span>
-                    </a>
-                    <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                      <span class="sr-only">Next</span>
-                    </a>
-                  </div>
+
+                  <video id="video" src="/uploads/vocabularies/{{$testvocab->subject_cid}}/{{$testvocab->subject_v}}" autoplay controls  width="100%" height="auto" ></video>
+                  <script>
+                    var video = document.getElementById("video");
+                    var index = 0;
+                    var videoPath = [
+                        '/uploads/vocabularies/{{$testvocab->subject_cid}}/{{$testvocab->subject_v}}',
+                        '/uploads/vocabularies/{{$testvocab->verb_cid}}/{{$testvocab->verb_v}}',
+                        '/uploads/vocabularies/{{$testvocab->obj_cid}}/{{$testvocab->obj_v}}']
+                    video.onended = function () {
+                      index++;
+                      if (index <= videoPath.length) {
+                        video.src = videoPath[index]
+                        video.load()
+                      }
+                      if( index == 3){
+                        index = 0;
+                        if (index <= videoPath.length) {
+                          video.src = videoPath[index]
+                          video.load()
+                        }
+                      }
+                      video.addEventListener('ended', play, false)
+                    };
+                  </script>
                 </div>
               </div>
               <div class="col-md-7" style="padding: 15px">
@@ -72,6 +87,7 @@
                   <div class="col-md-12 ">
                     <div class="row">
 
+                      <span id="myVid"></span>
                       <div class="sentence col-md-4">
                         <img class="tape" src="/../img/tape_yellow.png" alt="">
                         <div class="sentenceTitle1">
@@ -118,7 +134,7 @@
                   <div class="return col-md-12">
                     <div class="text-center">
                       <a href="/sentences/subject">
-                        <button class="btn btn-Stdback"><h2><i class="fas fa-redo-alt"></i> ย้อนกลับ</h2></button>
+                        <button class="btn btn-Stdback"><h2><i class="fas fa-arrow-left"></i> เริ่มเล่นใหม่</h2></button>
                       </a>
                     </div>
                   </div>
@@ -130,16 +146,4 @@
       </div>
     </div>
   </div>
-
-
-
-
-
-
-
-
-
-
-
-
 @endsection

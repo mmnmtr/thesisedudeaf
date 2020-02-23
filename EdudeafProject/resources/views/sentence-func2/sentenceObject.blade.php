@@ -1,5 +1,14 @@
 @extends('layouts.appstudent')
 @section('content')
+  <style>
+    .footer img {
+      display: none;
+    }
+    .functitleSentence {
+      border-left: solid 20px #f15f61;
+      border-right: solid 20px #f15f61;
+    }
+  </style>
   <form action="/sentences/object" method="post" enctype="multipart/form-data">
     {{ csrf_field() }}
   <div class="function">
