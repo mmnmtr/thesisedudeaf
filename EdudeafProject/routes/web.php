@@ -92,8 +92,9 @@ Route::prefix('admin')->group(function() {
   Route::get('/exercises/create/{id}','ExerciseController@exerciceType2');
 
 
-  Route::get('/student/create','StudentController@create');
-  Route::post('/student/store','StudentController@store');
+  Route::get('/students','StudentController@studentList');
+  Route::get('/students/create','StudentController@create');
+  Route::post('/students/store','StudentController@store');
 
 
 
