@@ -113,25 +113,14 @@
         </div>
       </div>
         <input type="hidden" name="password" value="0">
-
-      <button type="submit" class="btn btn-primary">
-        Register
-      </button>
-
       <div class="buttonAction row">
         <div class="col-md-5 offset-2">
           <div class="form-group">
-            <div class="col-md-6 col-md-offset-4">
-              <button type="submit" class="btn btn-primary">
-                Register
-              </button>
-            </div>
           </div>
           <button type="submit" value="Submit" class="btn btn-createCate"><i class="fas fa-plus-circle"></i> เพิ่มคำศัพท์</button>
         </div>
         <div class="col-md-5">
-          <a class="btn btn-teachBack"  href="/admin"><i class="fas fa-times-circle"></i> ยกเลิก</a>
-          <a href="/categories"><button class="btn-teachBack"><i class="fas fa-times-circle"></i> ยกเลิก</button></a>
+          <a class="btn btn-teachBack"  href="/admin/students"><i class="fas fa-times-circle"></i> ยกเลิก</a>
         </div>
       </div>
 

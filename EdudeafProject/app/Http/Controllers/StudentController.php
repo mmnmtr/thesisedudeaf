@@ -58,8 +58,19 @@ class StudentController extends Controller
     $user->password = bcrypt(request('password'));
     $user->save();
 
-    return redirect('/admin/categories/create')->withSuccess('สร้างหมวดหมู่คำศัพท์เรียบร้อย');
+    return redirect('/admin/students/create')->withSuccess('สร้างหมวดหมู่คำศัพท์เรียบร้อย');
   }
+
+  public function destroy($id){
+    $user = User::find($id);
+    $user->delete();
+    return redirect('/admin/students')->with('ลบหมวดหมู่คำศัพท์เรียบร้อย');
+  }
+
+//  public function show($id){
+//    $user = User::find($id);
+//    return view('student-categories.showword',compact('user'));
+//  }
 
 
 }

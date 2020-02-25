@@ -95,6 +95,10 @@ Route::prefix('admin')->group(function() {
   Route::get('/students','StudentController@studentList');
   Route::get('/students/create','StudentController@create');
   Route::post('/students/store','StudentController@store');
+  Route::get('/students/{id}','StudentController@show');
+  Route::get('/students/{id}/edit','StudentController@edit');
+  Route::put('/students/{id}','StudentController@update');
+  Route::delete('/students/{id}','StudentController@destroy');
 
 
 
