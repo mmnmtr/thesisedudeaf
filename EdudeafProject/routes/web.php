@@ -87,9 +87,10 @@ Route::prefix('admin')->group(function() {
     Route::get('/exercises','ExerciseController@index');
     Route::get('/exercises/create','ExerciseController@create');
     Route::post('/exercises/store','ExerciseController@store');
+    Route::get('/exercises/create/{id}/{type}','ExerciseController@exerciceType');
+//  Route::get('/exercises/create/{id}','ExerciseController@exerciceType2');
 
-    Route::get('/exercises/create/{id}','ExerciseController@exerciceType1');
-  Route::get('/exercises/create/{id}','ExerciseController@exerciceType2');
+     Route::post('/exercises/choices','ExerciseController@storeChoice');
 
 
   Route::get('/students','StudentController@studentList');

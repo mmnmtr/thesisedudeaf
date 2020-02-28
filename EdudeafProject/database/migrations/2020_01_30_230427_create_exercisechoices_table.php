@@ -17,10 +17,12 @@ class CreateExercisechoicesTable extends Migration
             $table->increments('id');
             $table->foreign('exercise_id')->references('id')->on('exercises')->onDelete('cascade');
             $table->integer('exercise_id')->unsigned();
-            $table->integer('exercise_number');
-            $table->string('exercise_img');
-            $table->string('choice_title');
-            $table->integer('answer');
+            $table->string('exercise_number')->nullable();
+            $table->string('exercise_img')->nullable();
+            $table->string('choice_title1')->nullable();
+          $table->string('choice_title2')->nullable();
+          $table->string('choice_title3')->nullable();
+            $table->string('answer')->nullable();
             $table->timestamps();
         });
     }
