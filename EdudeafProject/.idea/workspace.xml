@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="f1dedf0e-4ef6-4353-b0cf-d201a753e8ab" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ComposerSettings" doNotAsk="true" synchronizationState="SYNCHRONIZE">
+    <pharConfigPath>$PROJECT_DIR$/composer.json</pharConfigPath>
+    <execution>
+      <executable />
+    </execution>
+  </component>
+  <component name="PhpWorkspaceProjectConfiguration">
+    <include_path>
+      <path value="$PROJECT_DIR$/vendor/symfony/routing" />
+      <path value="$PROJECT_DIR$/vendor/symfony/polyfill-php70" />
+      <path value="$PROJECT_DIR$/vendor/symfony/finder" />
+      <path value="$PROJECT_DIR$/vendor/laravel/framework" />
+      <path value="$PROJECT_DIR$/vendor/symfony/http-kernel" />
+      <path value="$PROJECT_DIR$/vendor/laravel/tinker" />
+      <path value="$PROJECT_DIR$/vendor/symfony/var-dumper" />
+      <path value="$PROJECT_DIR$/vendor/symfony/polyfill-util" />
+      <path value="$PROJECT_DIR$/vendor/symfony/polyfill-php56" />
+      <path value="$PROJECT_DIR$/vendor/symfony/debug" />
+      <path value="$PROJECT_DIR$/vendor/symfony/process" />
+      <path value="$PROJECT_DIR$/vendor/symfony/console" />
+      <path value="$PROJECT_DIR$/vendor/webmozart/assert" />
+      <path value="$PROJECT_DIR$/vendor/dnoegel/php-xdg-base-dir" />
+      <path value="$PROJECT_DIR$/vendor/composer" />
+      <path value="$PROJECT_DIR$/vendor/phpspec/prophecy" />
+      <path value="$PROJECT_DIR$/vendor/jakub-onderka/php-console-color" />
+      <path value="$PROJECT_DIR$/vendor/jakub-onderka/php-console-highlighter" />
+      <path value="$PROJECT_DIR$/vendor/vlucas/phpdotenv" />
+      <path value="$PROJECT_DIR$/vendor/phpunit/php-code-coverage" />
+      <path value="$PROJECT_DIR$/vendor/phpunit/phpunit-mock-objects" />
+      <path value="$PROJECT_DIR$/vendor/phpunit/php-token-stream" />
+      <path value="$PROJECT_DIR$/vendor/phpunit/php-text-template" />
+      <path value="$PROJECT_DIR$/vendor/phpunit/php-file-iterator" />
+      <path value="$PROJECT_DIR$/vendor/phpunit/php-timer" />
+      <path value="$PROJECT_DIR$/vendor/tijsverkoyen/css-to-inline-styles" />
+      <path value="$PROJECT_DIR$/vendor/psr/log" />
+      <path value="$PROJECT_DIR$/vendor/kylekatarnls/update-helper" />
+      <path value="$PROJECT_DIR$/vendor/nesbot/carbon" />
+      <path value="$PROJECT_DIR$/vendor/hamcrest/hamcrest-php" />
+      <path value="$PROJECT_DIR$/vendor/nikic/php-parser" />
+      <path value="$PROJECT_DIR$/vendor/monolog/monolog" />
+      <path value="$PROJECT_DIR$/vendor/phpunit/phpunit" />
+      <path value="$PROJECT_DIR$/vendor/psy/psysh" />
+      <path value="$PROJECT_DIR$/vendor/myclabs/deep-copy" />
+      <path value="$PROJECT_DIR$/vendor/sebastian/version" />
+      <path value="$PROJECT_DIR$/vendor/sebastian/diff" />
+      <path value="$PROJECT_DIR$/vendor/sebastian/code-unit-reverse-lookup" />
+      <path value="$PROJECT_DIR$/vendor/sebastian/resource-operations" />
+      <path value="$PROJECT_DIR$/vendor/sebastian/object-enumerator" />
+      <path value="$PROJECT_DIR$/vendor/sebastian/recursion-context" />
+      <path value="$PROJECT_DIR$/vendor/sebastian/exporter" />
+      <path value="$PROJECT_DIR$/vendor/sebastian/environment" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/inflector" />
+      <path value="$PROJECT_DIR$/vendor/sebastian/comparator" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/instantiator" />
+      <path value="$PROJECT_DIR$/vendor/sebastian/global-state" />
+      <path value="$PROJECT_DIR$/vendor/swiftmailer/swiftmailer" />
+      <path value="$PROJECT_DIR$/vendor/ramsey/uuid" />
+      <path value="$PROJECT_DIR$/vendor/paragonie/random_compat" />
+      <path value="$PROJECT_DIR$/vendor/league/flysystem" />
+      <path value="$PROJECT_DIR$/vendor/mockery/mockery" />
+      <path value="$PROJECT_DIR$/vendor/erusev/parsedown" />
+      <path value="$PROJECT_DIR$/vendor/phpdocumentor/reflection-common" />
+      <path value="$PROJECT_DIR$/vendor/phpdocumentor/type-resolver" />
+      <path value="$PROJECT_DIR$/vendor/phpdocumentor/reflection-docblock" />
+      <path value="$PROJECT_DIR$/vendor/symfony/yaml" />
+      <path value="$PROJECT_DIR$/vendor/symfony/http-foundation" />
+      <path value="$PROJECT_DIR$/vendor/symfony/translation-contracts" />
+      <path value="$PROJECT_DIR$/vendor/symfony/event-dispatcher-contracts" />
+      <path value="$PROJECT_DIR$/vendor/symfony/polyfill-mbstring" />
+      <path value="$PROJECT_DIR$/vendor/symfony/translation" />
+      <path value="$PROJECT_DIR$/vendor/symfony/polyfill-ctype" />
+      <path value="$PROJECT_DIR$/vendor/symfony/css-selector" />
+      <path value="$PROJECT_DIR$/vendor/fzaninotto/faker" />
+      <path value="$PROJECT_DIR$/vendor/symfony/event-dispatcher" />
+      <path value="$PROJECT_DIR$/vendor/mtdowling/cron-expression" />
+    </include_path>
+  </component>
+  <component name="ProjectId" id="1WIyAsB2s8gpwH4BezfmPmSAp5n" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/resources/views/student-list" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="preferences.sourceCode.PHP" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/resources/views/student-list" />
+      <recent name="$PROJECT_DIR$/resources/views/exercises-Func3" />
+      <recent name="$PROJECT_DIR$/resources/views/exercise-student" />
+      <recent name="$PROJECT_DIR$/resources/views/layouts" />
+      <recent name="$PROJECT_DIR$/resources/views/layouts/inc" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="phpunit.xml" type="PHPUnitRunConfigurationType" factoryName="PHPUnit">
+      <TestRunner scope="XML" />
+      <method v="2" />
+    </configuration>
+  </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="f1dedf0e-4ef6-4353-b0cf-d201a753e8ab" name="Default Changelist" comment="" />
+      <created>1578333572923</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1578333572923</updated>
+      <workItem from="1578333574166" duration="5736000" />
+      <workItem from="1578373074517" duration="3828000" />
+      <workItem from="1578394889100" duration="17592000" />
+      <workItem from="1578842884836" duration="3632000" />
+      <workItem from="1578851270813" duration="193000" />
+      <workItem from="1578852191092" duration="11830000" />
+      <workItem from="1578892665379" duration="1764000" />
+      <workItem from="1579066144492" duration="20283000" />
+      <workItem from="1579439365372" duration="11044000" />
+      <workItem from="1579494410606" duration="1005000" />
+      <workItem from="1579792252460" duration="10584000" />
+      <workItem from="1579855891061" duration="1392000" />
+      <workItem from="1579968020012" duration="8873000" />
+      <workItem from="1580025926779" duration="9616000" />
+      <workItem from="1580045084312" duration="12932000" />
+      <workItem from="1580138366409" duration="17458000" />
+      <workItem from="1580222902012" duration="9571000" />
+      <workItem from="1580241707365" duration="10230000" />
+      <workItem from="1580279970760" duration="17203000" />
+      <workItem from="1580372311083" duration="22573000" />
+      <workItem from="1580454663357" duration="20468000" />
+      <workItem from="1580520865553" duration="3804000" />
+      <workItem from="1580532290035" duration="2390000" />
+      <workItem from="1580971153708" duration="241000" />
+      <workItem from="1581484049583" duration="1343000" />
+      <workItem from="1582397324801" duration="669000" />
+      <workItem from="1582475161886" duration="11963000" />
+      <workItem from="1582555684856" duration="5177000" />
+      <workItem from="1582635435317" duration="1862000" />
+      <workItem from="1582785925983" duration="6048000" />
+      <workItem from="1582809540631" duration="10101000" />
+      <workItem from="1582883227719" duration="4233000" />
+      <workItem from="1582956980580" duration="2215000" />
+      <workItem from="1583075063287" duration="218000" />
+      <workItem from="1583222659193" duration="4072000" />
+      <workItem from="1583307653096" duration="16371000" />
+      <workItem from="1583397172551" duration="8845000" />
+      <workItem from="1583510610035" duration="143000" />
+      <workItem from="1583678627398" duration="511000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="539" y="326" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1583348799363">
+      <screen x="0" y="23" width="1680" height="986" />
+    </state>
+    <state x="539" y="326" key="#com.intellij.fileTypes.FileTypeChooser/0.23.1680.986@0.23.1680.986" timestamp="1583348799363" />
+    <state x="495" y="246" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1582833170483">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="495" y="246" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1440.900/1440.0.1920.1080@0.0.1440.900" timestamp="1582833170483" />
+    <state x="578" y="287" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1680.1050@0.0.1680.1050" timestamp="1582637413375" />
+    <state x="578" y="293" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.23.1680.986@0.23.1680.986" timestamp="1582480163514" />
+    <state x="85" y="186" key="#phpunit.xml" timestamp="1580056587569">
+      <screen x="0" y="0" width="1680" height="1050" />
+    </state>
+    <state x="85" y="186" key="#phpunit.xml/0.0.1680.1050@0.0.1680.1050" timestamp="1580056587569" />
+    <state x="349" y="164" key="SettingsEditor" timestamp="1579451035887">
+      <screen x="0" y="0" width="1680" height="1050" />
+    </state>
+    <state x="349" y="164" key="SettingsEditor/0.0.1680.1050@0.0.1680.1050" timestamp="1579451035887" />
+    <state x="498" y="138" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1583347542696">
+      <screen x="0" y="23" width="1680" height="986" />
+    </state>
+    <state x="498" y="138" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.23.1680.986@0.23.1680.986" timestamp="1583347542696" />
+    <state x="505" y="248" key="run.anything.popup" timestamp="1582397810859">
+      <screen x="0" y="0" width="1680" height="1050" />
+    </state>
+    <state x="505" y="248" key="run.anything.popup/0.0.1680.1050@0.0.1680.1050" timestamp="1582397810859" />
+    <state x="505" y="242" width="670" height="635" key="search.everywhere.popup" timestamp="1582565662407">
+      <screen x="0" y="23" width="1680" height="986" />
+    </state>
+    <state x="505" y="233" width="670" height="676" key="search.everywhere.popup/0.0.1680.1050@0.0.1680.1050" timestamp="1580246729720" />
+    <state x="505" y="242" width="670" height="635" key="search.everywhere.popup/0.23.1680.986@0.23.1680.986" timestamp="1582565662407" />
+  </component>
+</project>
