@@ -1,0 +1,74 @@
+
+body {
+    font-family: 'Kodchasan', sans-serif;
+    background-color: #FCFBF5;
+    background-image: url("../img/bg_login.png");
+  /*background-image: url("https://sv1.picz.in.th/images/2020/01/29/RGEiHy.png");*/
+    background-repeat : no-repeat;
+    background-position: left;
+    background-size: 100% auto;
+    height: 100vh;
+}
+h1,h2,h3,h4,p,span {
+    font-family: 'Kodchasan', sans-serif;
+}
+
+@media (min-width: 1200px) {
+    .container {
+        max-width: 1640px!important;
+    }
+}
+.function {
+    padding-top: 170px;
+}
+.header {
+    height: 168px;
+    width: 100%;
+    position: fixed;
+    z-index: 1;
+}
+.navbar-brand {
+    width: 100%;
+    padding-top: 1.3125rem !important;
+    padding-bottom: .3125rem !important;
+
+}
+.navbar-brand img {
+    width: 120%;
+    height: auto;
+    margin-left: -50px;
+    margin-top: 10px;
+}
+.bandner {
+    padding-top: 435px;
+}
+.logoLogin img {
+    width: 565px;
+    height: auto;
+}
+.logoLogin h1 {
+    font-family: 'Kodchasan', sans-serif;
+    text-align: center;
+    font-size: 55px;
+    font-weight: bold;
+    color: #453324;
+    margin-top: -30%;
+}
+.bandner p {
+    font-size: 40px;
+    font-weight: bold;
+    color: #393939;
+    margin-top: -10%;
+    padding-bottom: 20px;
+}
+.logoLoginPhoto img {
+    width: 100%;
+    height: auto;
+}
+.logoLoginPhoto h1 {
+    font-family: 'Kodchasan', sans-serif;
+    color: #ffffff;
+    font-size: 45px;
+    font-weight: bold;
+    margin-top: -30%;
+}
