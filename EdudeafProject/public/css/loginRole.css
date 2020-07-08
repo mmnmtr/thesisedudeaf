@@ -2,12 +2,16 @@
 body {
     font-family: 'Kodchasan', sans-serif;
     background-color: #FCFBF5;
-    background-image: url("../img/bg_login.png");
+    background-image: url("../img/BG_Login_01.gif");
   /*background-image: url("https://sv1.picz.in.th/images/2020/01/29/RGEiHy.png");*/
     background-repeat : no-repeat;
-    background-position: left;
-    background-size: 100% auto;
-    height: 100vh;
+    background-position: 0px 0px;
+    background-size: cover;
+  min-height: 100%;
+  overflow: hidden;
+}
+html {
+  height: 100%;
 }
 h1,h2,h3,h4,p,span {
     font-family: 'Kodchasan', sans-serif;
@@ -15,7 +19,7 @@ h1,h2,h3,h4,p,span {
 
 @media (min-width: 1200px) {
     .container {
-        max-width: 1640px!important;
+        max-width: 1200px!important;
     }
 }
 .function {
@@ -26,6 +30,12 @@ h1,h2,h3,h4,p,span {
     width: 100%;
     position: fixed;
     z-index: 1;
+}
+.position {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
 }
 .navbar-brand {
     width: 100%;
@@ -40,10 +50,10 @@ h1,h2,h3,h4,p,span {
     margin-top: 10px;
 }
 .bandner {
-    padding-top: 435px;
+    padding-top: 350px;
 }
 .logoLogin img {
-    width: 565px;
+    width: 100%;
     height: auto;
 }
 .logoLogin h1 {
@@ -55,11 +65,15 @@ h1,h2,h3,h4,p,span {
     margin-top: -30%;
 }
 .bandner p {
-    font-size: 40px;
+    font-size: 2rem;
     font-weight: bold;
     color: #393939;
     margin-top: -10%;
     padding-bottom: 20px;
+}
+.bandnerRight img{
+  width: 70%;
+  height: auto;
 }
 .logoLoginPhoto img {
     width: 100%;
@@ -72,3 +86,56 @@ h1,h2,h3,h4,p,span {
     font-weight: bold;
     margin-top: -30%;
 }
+a.logoLoginPhoto:hover {
+  text-decoration: none !important;
+}
+
+
+/*ipad Pro size*/
+@media only screen
+and (min-device-width : 1025px)
+and (max-device-width : 1366px) {
+  .header {
+    padding-top: 100px;
+  }
+}
+
+/*ipad ipro size */
+@media only screen
+and (min-device-width : 768px)
+and (max-device-width : 1366px) {
+  .bandner p {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #393939;
+    margin-top: -10%;
+    padding-bottom: 20px;
+  }
+}
+
+/*ipad size*/
+@media only screen
+and (min-device-width : 768px)
+and (max-device-width : 1024px) {
+  .logoLoginPhoto h1 {
+    font-family: 'Kodchasan', sans-serif;
+    color: #ffffff;
+    font-size: 2rem;
+    font-weight: bold;
+    margin-top: -30%;
+  }
+  .logoLogin img {
+    width: 90%;
+    height: auto;
+  }
+}
+
+/*ipad & Pro size*/
+@media only screen
+and (min-device-width : 768px)
+and (max-device-width : 1023px) {
+  /*body {*/
+  /*  display: none;*/
+  /*}*/
+}
+

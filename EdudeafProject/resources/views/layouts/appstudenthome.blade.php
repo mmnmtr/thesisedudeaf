@@ -16,36 +16,34 @@
 </div>
 <footer>
     <div class="footer">
-        <img class="bgFooter" src="/../img/footer_bg.png" alt="">
+        <img class="bgFooter" src="/../img/BG_Footer_01.gif" alt="">
         <div class="copyright">
             <div class="text-center">
                 <h3> copyright © 2019 | eduDeaf.com</h3>
             </div>
         </div>
         <div class="container">
-            <div class="col-md-offset-8 talkBox">
-                    <h3>สนุกกันเปล่า ?</h3>
+          <center>
+            <div class="talkBox">
 
-                    <p>
-                        หวังว่าการผจญภัยในครั้งนี้
-                        <br>
-                        จะทำให้ทุกคนสนุกกับการเรียนรู้
-                        <br>
-                        ไว้มาเจอกันใหม่นะ : - )
-                    </p>
+              {{--                    <h3>สนุกกันเปล่า ?</h3>--}}
+
+              {{--                    <p>--}}
+              {{--                        หวังว่าการผจญภัยในครั้งนี้--}}
+              {{--                        <br>--}}
+              {{--                        จะทำให้ทุกคนสนุกกับการเรียนรู้--}}
+              {{--                        <br>--}}
+              {{--                        ไว้มาเจอกันใหม่นะ : - )--}}
+              {{--                    </p>--}}
+              <img class="bgFooter" src="/../img/logo_edu.gif" alt="">
             </div>
-            <div class="col-md-4 offset-1">
+          </center>
 
 
-            </div>
 
             {{--<hr>--}}
         </div>
-      <div class="modelFooter">
 
-        <img src="/../img/footer_prop.png" alt="">
-
-      </div>
     </div>
 
 </footer>

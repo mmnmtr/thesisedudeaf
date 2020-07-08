@@ -12,6 +12,8 @@
 */
 
 
+
+
 Route::get('/', function () {
     return view('loginRole');
 });
@@ -50,7 +52,16 @@ Route::get('/exercises',function () {
 Route::get('/exercises/type/1','ExerciseController@stdExcerT1');
 Route::get('/exercises/type/2','ExerciseController@stdExcerT2');
 
-Route::get('/exercises/{id}','ExerciseController@stdExceshow');
+Route::get('/exercises/type1/{id}','ExerciseController@stdExceshowType1');
+Route::get('/exercises/type2/{id}','ExerciseController@stdExceshowType2');
+Route::resource('/user-insert-choice','ExampleKKController@store');
+
+Route::post('/exercises/scoreT1','ExerciseController@scoreT1');
+Route::post('/exercises/scoreT2','ExerciseController@scoreT2');
+
+Route::post('/user-insert-choice','ExampleKKController@store');
+
+
 
 
 
@@ -59,7 +70,7 @@ Route::get('/exercises/{id}','ExerciseController@stdExceshow');
 Route::prefix('admin')->group(function() {
     Route::get('/login', 'Auth\AdminLoginController@showLoginForm')->name('admin.login');
     Route::post('/login', 'Auth\AdminLoginController@login')->name('admin.login.submit');
-    Route::get('/', 'AdminController@index')->name('admin.dashboard');
+    Route::get('/', 'CategoriesController@index')->name('admin.dashboard');
 
 
 //    Route::get('/categories/create','AdminController@categoriesCreate');
@@ -85,13 +96,22 @@ Route::prefix('admin')->group(function() {
 //
     Route::get('/exercises','ExerciseController@index');
     Route::get('/exercises/create','ExerciseController@create');
+    Route::get('/exercises/{id}/{type}','ExerciseController@exerciseShow');
     Route::post('/exercises/store','ExerciseController@store');
     Route::get('/exercises/create/{id}/{type}','ExerciseController@exerciceType');
 //  Route::get('/exercises/create/{id}','ExerciseController@exerciceType2');
 
      Route::post('/exercises/choices','ExerciseController@type1Choice');
   Route::post('/exercises/choicesT','ExerciseController@type2Choice');
-  Route::get('/exercises/{id}','ExerciseController@Exceshow');
+  Route::delete('/exercises/{id}/delete','ExerciseController@destroy');
+  Route::get('/exercisesScore/{id}','ExerciseController@exerciseStrScore');
+
+  Route::get('/exerciseschoice/{id}/editT1','ExerciseChoicesController@editT1');
+  Route::get('/exerciseschoice/{id}/editT2','ExerciseChoicesController@editT2');
+  Route::put('/exerciseschoiceT1/{id}','ExerciseChoicesController@updateT1');
+  Route::put('/exerciseschoiceT2/{id}','ExerciseChoicesController@updateT2');
+  Route::delete('/exerciseschoice/{id}/deleteT1','ExerciseChoicesController@destroyT1');
+  Route::delete('/exerciseschoice/{id}/deleteT2','ExerciseChoicesController@destroyT2');
 
 
   Route::get('/students','StudentController@studentList');
@@ -101,6 +121,10 @@ Route::prefix('admin')->group(function() {
   Route::get('/students/{id}/edit','StudentController@edit');
   Route::put('/students/{id}','StudentController@update');
   Route::delete('/students/{id}','StudentController@destroy');
+
+  Route::get('/students/{id}/sentences','StudentController@showSentence');
+  Route::get('/students/{id}/exercises','StudentController@showExercise');
+
 
 
 

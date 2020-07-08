@@ -98,14 +98,17 @@ li {
     box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.08);
 }
 .login_inputTitle {
-    margin-top: 75px;
-    width: 100%;
-    height: 70px;
-    border-radius: 15px;
-    border: none;
-    padding: 20px;
-    background-color: #ffffff;
-    box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.08);
+    margin-top: 120px;
+    /*width: 100%;*/
+    /*height: 70px;*/
+    /*border-radius: 15px;*/
+    /*border: none;*/
+    /*padding: 20px;*/
+    /*background-color: #ffffff;*/
+    /*box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.08);*/
+}
+.login_inputTitle h2 {
+    margin-left: 21px;
 }
 .login form {
     margin-top: 15px;

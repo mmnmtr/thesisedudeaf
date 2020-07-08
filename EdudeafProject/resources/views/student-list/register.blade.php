@@ -1,4 +1,4 @@
-@extends('layouts.appteacher')
+@extends('layouts.appteacherStd')
 @section('content')
   <style>
     input[type=radio] {
@@ -73,7 +73,7 @@
           <div class="col col-md-6">
             <div class="form-group{{ $errors->has('studentNumber') ? ' has-error' : '' }}">
               <label for="due" class="padding40 categoryTitle control-label">| เลขที่</label>
-              <input id="studentNumber" type="text" class="createInput form-control" name="studentNumber" value="{{ old('studentNumber') }}" required autofocus>
+              <input id="studentNumber" type="text" class="createInput form-control" name="studentNumber" placeholder="กรุณาระบุเลขที่" value="{{ old('studentNumber') }}" required autofocus>
             </div>
           </div>
         </div>
@@ -84,13 +84,13 @@
           <div class="col col-md-6">
             <div class="form-group{{ $errors->has('name') ? ' has-error' : '' }}">
               <label for="due" class="padding40 categoryTitle control-label">| ชื่อ</label>
-              <input id="name" type="text" class="createInput form-control" name="name" value="{{ old('name') }}" required>
+              <input id="name" type="text" class="createInput form-control" name="name" placeholder="กรุณากรอกชื่อ" value="{{ old('name') }}" required>
             </div>
           </div>
           <div class="col col-md-6">
             <div class="form-group{{ $errors->has('lastname') ? ' has-error' : '' }}">
               <label for="due" class="padding40 categoryTitle control-label">| นามสกุล</label>
-              <input id="lastname" type="text" class="createInput form-control" name="lastname" value="{{ old('lastname') }}" required autofocus>
+              <input id="lastname" type="text" class="createInput form-control" name="lastname" placeholder="กรุณากรอกนามสกุล" value="{{ old('lastname') }}" required autofocus>
             </div>
           </div>
         </div>
@@ -101,7 +101,7 @@
           <div class="col col-md-6">
             <div class="form-group{{ $errors->has('nickname') ? ' has-error' : '' }}">
               <label for="due" class="padding40 categoryTitle control-label">| ชื่อเล่น</label>
-              <input id="nickname" type="text" class="createInput form-control" name="nickname" value="{{ old('nickname') }}" required>
+              <input id="nickname" type="text" class="createInput form-control" name="nickname" placeholder="กรุณากรอกชื่อเล่น" value="{{ old('nickname') }}" required>
             </div>
           </div>
           <div class="col col-md-6">
@@ -114,12 +114,10 @@
       </div>
         <input type="hidden" name="password" value="0">
       <div class="buttonAction row">
-        <div class="col-md-5 offset-2">
-          <div class="form-group">
-          </div>
-          <button type="submit" value="Submit" class="btn btn-createCate"><i class="fas fa-plus-circle"></i> เพิ่มคำศัพท์</button>
+        <div class="col-md-4 offset-2">
+          <button type="submit" value="Submit" class="btn btn-createCate"><i class="fas fa-plus-circle"></i> เพิ่มรายชื่อ</button>
         </div>
-        <div class="col-md-5">
+        <div class="col-md-3">
           <a class="btn btn-teachBack"  href="/admin/students"><i class="fas fa-times-circle"></i> ยกเลิก</a>
         </div>
       </div>

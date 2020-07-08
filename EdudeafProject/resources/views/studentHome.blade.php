@@ -5,16 +5,17 @@
         <div class="container">
             <div class="bandner">
                 <div class="row">
-                    <div class="col-12 col-md-4 bandnerLeft ">
+                    <div class="col-12 col-md-6 bandnerLeft ">
                         <img src="/../img/logo_edu.gif" alt="">
-z                        <div class="bandnerLeftText slide-right" >
-                            <h3>ยินดีต้อนรับเข้าสู่ดินแดนมหัศจรรย์</h3>
+                        <div class="bandnerLeftText slide-right" >
+                            <h3>ยินดีต้อนรับเข้าสู่โรงเรียน</h3>
                             <p>
                                 มาสนุกกับการเรียนรู้คำศัพท์ภาษามือ
+                              <br>
+                                แต่งประโยคและแบบฝึกหัด พร้อมกันรึยัง?
                                 <br>
-                                แต่งประโยค และแบบฝึกหัด พร้อมกันรึยัง ?
                             </p>
-                            <h4>มาเริ่มผจญภัยกันเลย : - )</h4>
+                            <h4>มาเริ่มเรียนรู้กันเลย : - )</h4>
                         </div>
                     </div>
                     <div class="col-12 col-md-5 offset-1 bandnerRight">
@@ -47,11 +48,11 @@ z                        <div class="bandnerLeftText slide-right" >
                                     </p>
                                 </div>
                             </div>
-                            <div class="offset-7">
+                            <div class="offset-8">
                                 <img class="assBook" src="/../img/bookRed.png" alt="">
                             </div>
                             <div class="offset-4">
-                                <a href="/student"><button class="btn btnfunc1content">เริ่มเลย <i class="fas fa-arrow-circle-right"></i></button></a>
+                                <a href="/student"><button class="btn btnfunc1content"> เริ่มเลย <i class="fas fa-arrow-right"></i></button></a>
                             </div>
                         </div>
 
@@ -69,11 +70,11 @@ z                        <div class="bandnerLeftText slide-right" >
             <div class="container">
                 <div class="func2content">
                     <div class="row">
-                        <div class="col-md-5" style="margin-left: 80px">
+                        <div class="col-md-4">
                             <div class="text-center func2Left">
                                 <div class="func2LeftTittle">
                                     <button class="btn btn-func2LeftTittle"><h1>2</h1></button>
-                                    <h2>หมวดหมู่คำศัพท์</h2>
+                                    <h2>แต่งประโยค</h2>
                                     <hr class="underTittle2">
                                     <p>“ เรียนรู้การแต่งประโยคภาษามือ
                                         <br>
@@ -81,7 +82,7 @@ z                        <div class="bandnerLeftText slide-right" >
                                     </p>
                                 </div>
                                 <div class="offset-3">
-                                    <a href="/student"><button class="btn btnfunc2content">เริ่มเลย <i class="fas fa-arrow-circle-right"></i></button></a>
+                                    <a href="/sentences/subject"><button class="btn btnfunc2content"> เริ่มเลย <i class="fas fa-arrow-right"></i></button></a>
                                 </div>
                             </div>
                             <div class="col-md-9 assPencil">
@@ -89,7 +90,7 @@ z                        <div class="bandnerLeftText slide-right" >
                             </div>
 
                         </div>
-                        <div class="col-md-6">
+                        <div class="col-md-7 offset-1">
                             <div class="text-center func2Right">
                                 <img src="/../img/right_sentence.png" alt="">
                             </div>
@@ -104,14 +105,14 @@ z                        <div class="bandnerLeftText slide-right" >
             <div class="container">
                 <div class="func3content">
                     <div class="row">
-                        <div class="col-md-4 offset-2 func3Left">
+                        <div class="col-md-5 offset-1 func3Left">
                             <img src="/../img/left_exam.png" alt="">
                         </div>
                         <div class="col-md-5">
                             <div class="text-center func3Right">
-                                <div class="func1RightTittle">
+                                <div class="func1RfbgFooterightTittle">
                                     <button class="btn btn-func3RightTittle"><h1>3</h1></button>
-                                    <h2>หมวดหมู่คำศัพท์</h2>
+                                    <h2>แบบฝึกหัด</h2>
                                     <hr class="underTittle3">
                                     <p>“ เติมเต็มพัฒนาการเรียนรู้ด้วย
                                         <br>
@@ -119,7 +120,7 @@ z                        <div class="bandnerLeftText slide-right" >
                                 </div>
                             </div>
                             <div class="offset-4">
-                                <a href="/student"><button class="btn btnfunc3content">เริ่มเลย <i class="fas fa-arrow-circle-right"></i></button></a>
+                                <a href="/exercises"><button class="btn btnfunc3content"> เริ่มเลย <i class="fas fa-arrow-right"></i></button></a>
                             </div>
                         </div>
 

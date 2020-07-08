@@ -16,6 +16,7 @@
                     <img src="/../img/icon_teacher.png" alt="">
                 </div>
                 <div class="col-md-6 offset-3 login_inputTitle">
+                    <h2>Welcome back !</h2>
                     <h1>เข้าสู่ระบบคุณครู</h1>
                 </div>
                 <div class="col-12 offset-1 col-md-10">
@@ -57,7 +58,8 @@
 
                         <div class="form-group">
                             <div class="col text-center">
-                                <button type="submit" class="btn btn-login text-center">เข้าสู่ระบบ</button>
+
+                             <button type="submit" class="btn btn-login text-center"> <i class="fas fa-sign-in-alt"></i> เข้าสู่ระบบ</button>
                             </div>
                         </div>
                     </form>

@@ -23,6 +23,7 @@ class VocabulariesController extends Controller
         ]);
 
 
+        //video
         $filenameWithExt = $request->file('vocab_video')->getClientOriginalName();
         $filename = pathinfo($filenameWithExt,PATHINFO_FILENAME);
         $extension = $request->file('vocab_video')->getClientOriginalName();
@@ -67,7 +68,7 @@ class VocabulariesController extends Controller
         $category->vocab_video = $filenameToStore;
         $category->save();
 
-        return redirect('/admin/categories/'. $request->input('category_id'))->with('เพิ่มคำศัพท์สำเร็จ');
+        return redirect('/admin/categories/'. $request->input('category_id'))->with('success','เพิ่มคำศัพท์เรียบร้อยแล้ว');
     }
     public function edit($id)
     {
@@ -82,11 +83,52 @@ class VocabulariesController extends Controller
             'vocab_word'=>'required',
         ]);
 
+      if ($request->hasFile('vocab_photo')) {
+        $extension = $request->file('vocab_photo')->getClientOriginalName();
+
+        //create new file namehj
+        $filenameToStorePhoto = Date('YmdHis').'_'.$extension;
+
+        //upload
+        $request->file('vocab_photo')->move('uploads/vocabularies/'. $request->input('category_id'),$filenameToStorePhoto);
+      }
+
+      if ($request->hasFile('vocab_photoReal')) {
+        $extension = $request->file('vocab_photoReal')->getClientOriginalName();
+
+        //create new file namehj
+        $filenameToStorePhotoReal = Date('YmdHis').'_'.$extension;
+
+        //upload
+        $request->file('vocab_photoReal')->move('uploads/vocabularies/'. $request->input('category_id'),$filenameToStorePhotoReal);
+      }
+
+
+      if ($request->hasFile('vocab_video')) {
+        $extension = $request->file('vocab_video')->getClientOriginalName();
+
+        //create new file namehj
+        $filenameToStore = Date('YmdHis').'_'.$extension;
+
+        //upload
+        $request->file('vocab_video')->move('uploads/vocabularies/'. $request->input('category_id'),$filenameToStore);
+      }
+
+      else {
+        $filenameToStorePhoto = $request->get('vocab_photo_old');
+        $filenameToStorePhotoReal = $request->get('vocab_photoReal_old');
+        $filenameToStore = $request->get('vocab_video_old');
+      }
+
         $vocabulary = Vocabulary::find($id);
+      $vocabulary->category_id = $request->input('category_id');
         $vocabulary->vocab_word = $request->input('vocab_word');
+        $vocabulary->vocab_photo = $filenameToStorePhoto;
+        $vocabulary->vocab_photoReal = $filenameToStorePhotoReal;
+        $vocabulary->vocab_video = $filenameToStore;
         $vocabulary->save();
 
-        return redirect('/admin/categories/'.$vocabulary->category_id)->with('แก้ไขเรียบร้อย');
+        return redirect('/admin/categories/'.$vocabulary->category_id)->with('success','แก้ไขคำศัพท์เรียบร้อยแล้ว');
 
     }
     public function show($id){
@@ -96,7 +138,7 @@ class VocabulariesController extends Controller
     public function destroy($id){
         $vocabulary = Vocabulary::find($id);
         $vocabulary->delete();
-        return redirect('/admin/categories/'.$vocabulary->category_id)->with('ลบหมวดหมู่คำศัพท์เรียบร้อย');
+        return redirect('/admin/categories/'.$vocabulary->category_id)->with('success','ลบหมวดหมู่คำศัพท์เรียบร้อย');
     }
 
 }

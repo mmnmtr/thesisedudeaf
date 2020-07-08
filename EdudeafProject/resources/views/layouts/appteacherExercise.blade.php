@@ -10,10 +10,17 @@
     <link rel="stylesheet" href="/css/teacherSystem.css">
     <link href="https://fonts.googleapis.com/css?family=Bai+Jamjuree&display=swap" rel="stylesheet">
 
-    <link rel="stylesheet" href="/css/sweetalert.css">
 </head>
+<style>
+  .table {
+    margin-bottom: 50px;
+  }
+
+</style>
 <body>
 @include('layouts.inc.teacherExercise_header')
+@include('sweetalert::alert')
+
 <div class="container mt-10">
     {{--@include('inc.message')--}}
 
@@ -23,12 +30,12 @@
     <p>copyright © 2019 | eduDeaf.com </p>
 </div>
 
-<script src="/js/sweetalert.min.js"></script>
 
 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 <script src="https://unpkg.com/gijgo@1.9.11/js/gijgo.min.js" type="text/javascript"></script>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
 <script>
     $("#menu-toggle").click(function(e) {
         e.preventDefault();
@@ -67,26 +74,26 @@
         document.getElementById("icard").innerHTML = x.value.toUpperCase();
     }
 </script>
-<script>
-    var addNumeration = function(cl){
-        var table = document.querySelector('table.' + cl)
-        var trs = table.querySelectorAll('tr')
-        var counter = 1
+{{--<script>--}}
+{{--    var addNumeration = function(cl){--}}
+{{--        var table = document.querySelector('table.' + cl)--}}
+{{--        var trs = table.querySelectorAll('tr')--}}
+{{--        var counter = 1--}}
 
-        Array.prototype.forEach.call(trs, function(x,i){
-            var firstChild = x.children[0]
-            if (firstChild.tagName === 'TD') {
-                var cell = document.createElement('td')
-                cell.textContent = counter ++
-                x.insertBefore(cell,firstChild)
-            } else {
-                firstChild.setAttribute('colspan',2)
-            }
-        })
-    }
+{{--        Array.prototype.forEach.call(trs, function(x,i){--}}
+{{--            var firstChild = x.children[0]--}}
+{{--            if (firstChild.tagName === 'TD') {--}}
+{{--                var cell = document.createElement('td')--}}
+{{--                cell.textContent = counter ++--}}
+{{--                x.insertBefore(cell,firstChild)--}}
+{{--            } else {--}}
+{{--                firstChild.setAttribute('colspan',2)--}}
+{{--            }--}}
+{{--        })--}}
+{{--    }--}}
 
-    addNumeration("number")
-</script>
+{{--    addNumeration("number")--}}
+{{--</script>--}}
 <script>
     (function($) {
         $.fn.mnFileInput = function(params) {
@@ -127,5 +134,31 @@
         });
     }
 </script>
+<script>
+  function readImg(input) {
+    if (input.files && input.files[0]) {
+      var reader = new FileReader();
+
+      reader.onload = function (e) {
+        $('#real_image')
+          .attr('src', e.target.result);
+      };
+
+      reader.readAsDataURL(input.files[0]);
+    }
+  }     function readImg(input) {
+    if (input.files && input.files[0]) {
+      var reader = new FileReader();
+
+      reader.onload = function (e) {
+        $('#real_image')
+          .attr('src', e.target.result);
+      };
+
+      reader.readAsDataURL(input.files[0]);
+    }
+  }
+</script>
+@stack('scripts')
 </body>
 </html>

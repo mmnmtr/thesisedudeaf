@@ -2,14 +2,14 @@
 @section('content')
     <div class="container">
         <div class="bandner">
+          <div class="position">
+            <div class="container">
             <div class="row">
                 <div class="col-12 col-md-6 bandnerLeft ">
-                    z
-                    <p>ยินดีต้อนรับเข้าสู่ “ EduDeaf ”
+
+                    <p>ยินดีต้อนรับเข้าสู่โรงเรียน “EduDeaf”
                       <br>
-                      มาสนุกเพลิดเพลินกับการเรียนรู้
-                      <br>
-                      มาเริ่มต้นกันเลย !
+                      กรุณาเลือกประเภทผู้ใช้งานเข้าสู่ระบบ
                     </p>
                     <div class="row">
                         <div class="col-md-6 text-center">
@@ -30,6 +30,8 @@
                     <img src="/../img/welcome_model.png" alt="">
                 </div>
             </div>
+            </div>
+          </div>
         </div>
     </div>
 @endsection

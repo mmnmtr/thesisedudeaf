@@ -3,14 +3,15 @@ body {
   background-color: #FCFBF5 !important;
   background-image: url("../img/bg_std.png");
   background-repeat: no-repeat;
-  background-position: left bottom;
-  background-size: 100% auto;
-  height: 100vh;
+  background-position: 0px 0px;
+  background-size: cover;
+  min-height: 100%;
+  overflow: hidden;
 }
 
 @media (min-width: 1200px) {
   .container {
-    max-width: 1640px !important;
+    max-width: 1200px !important;
   }
 }
 
@@ -90,92 +91,92 @@ input.input_studentLogin::-webkit-inner-spin-button {
   margin-bottom: 130px;
   margin-top: 30px;
   width: 100%;
-  height: 145px;
+  height: 100px;
   border-radius: 10px;
   box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.16);
   border: solid 8px #f9d44d;
   background-color: #ffffff;
   font-family: 'Kodchasan';
-  font-size: 104px;
+  font-size: 80px;
   font-weight: bold;
   color: #393939;
 }
 
 .btn-loginStd {
-  /*margin-left: 30%;*/
-  /*position: absolute;*/
-  /*margin-top: -4%;*/
-  width: 370px;
-  height: 126px;
+  width: 100%;
+  height: 90px;
   border-radius: 100px !important;
   box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.16);
   border: solid 7px #ffffff !important;
   background-color: #3EBBAE;
   font-family: 'Kodchasan';
-  font-size: 45px !important;
+  font-size: 32px !important;
   font-weight: bold;
   color: #ffffff;
 }
 img.book {
-  position: absolute;
+  /*width: 100;*/
+  /*position: absolute;*/
   z-index: 10;
-  margin-top: -355px;
+  margin-top: -195px;
   padding-left: 30px;
 }
-.footer {
-  height: 60px;
-  font-family: 'Kodchasan';
-  font-size: 20px;
-  position: fixed;
-  left: 0;
-  bottom: 0;
-  width: 100%;
-  background-color: #FAF8F3;
-  color: #9F9D98;
-  text-align: center;
-}
-.footer p {
-  margin-top: 15px;
+/*.footer {*/
+/*  height: 60px;*/
+/*  font-family: 'Kodchasan';*/
+/*  font-size: 20px;*/
+/*  position: fixed;*/
+/*  left: 0;*/
+/*  bottom: 0;*/
+/*  width: 100%;*/
+/*  background-color: #FAF8F3;*/
+/*  color: #9F9D98;*/
+/*  text-align: center;*/
+/*}*/
+/*.footer p {*/
+/*  margin-top: 15px;*/
+/*}*/
+.footer{
+  display: none;
 }
 
 .input_studentLoginShow {
   margin-bottom: 130px;
-  margin-top: 50px;
+  /*margin-top: 50px;*/
   width: 100%;
   height: 145px;
   box-shadow: 0 4px 2px -2px rgba(0, 0, 0, 0.16);
   border-bottom: solid 2px #e8e8e8;
   background-color: #ffffff;
   font-family: 'Kodchasan';
-  font-size: 45px;
+  font-size: 35px;
   font-weight: bold;
   color: #393939;
   bottom: 0;
 }
 
 .input_studentLoginShow p {
-  padding-top: 50px;
+  padding-top: 70px;
 }
 
 .input_studentLoginShow span {
-  font-size: 45px;
+  font-size: 42px;
   font-weight: bold;
   color: #f15f61;
 }
 
 .btn-logoutStd {
-  margin-top: 10px;
-  width: 370px;
-  height: 126px;
+  width: 100%;
+  height: 90px;
   border-radius: 100px !important;
   font-family: 'Kodchasan';
-  font-size: 45px !important;
+  font-size: 32px !important;
   font-weight: bold;
   border: solid 7px #ffffff !important;
   color: #ffffff;
   box-shadow: 0 10px 10px 0 rgba(0, 0, 0, 0.16);
   border: solid 7px #ffffff;
-  background-color: #54BEEE;
+  background-color: #f6ce4f;
 }
 
 .btn-logoutStd a {
@@ -188,13 +189,13 @@ img.book {
 }
 
 .btn-nextStd {
-  margin-left: 100px;
-  margin-top: 10px;
-  width: 370px;
-  height: 126px;
+  /*margin-left: 100px;*/
+  /*margin-top: 10px;*/
+  width: 100%;
+  height: 90px;
   border-radius: 100px !important;
   font-family: 'Kodchasan';
-  font-size: 45px !important;
+  font-size: 32px !important;
   font-weight: bold;
   border: solid 7px #ffffff !important;
   color: #ffffff;
@@ -212,12 +213,89 @@ img.book {
   color: #ffffff;
 }
 .btnAction {
-  margin-left: 30%;
+  width: 100%;
   position: absolute;
   margin-top: -4%;
 }
 .btnActionN {
-  margin-left: 10%;
+  margin-left: -4%;
+  width: 100%;
   position: absolute;
   margin-top: -4%;
 }
+
+
+
+/*ipad pro size */
+@media only screen
+and (min-device-width : 768px)
+and (max-device-width : 1366px) {
+  .input_studentLogin {
+    margin-bottom: 100px;
+  }
+
+
+}
+
+/*ipad & pro size*/
+@media only screen
+and (min-device-width : 768px)
+and (max-device-width : 1366px) {
+  .navbar-brand img {
+    width: 120%;
+    height: auto;
+    margin-left: 0px;
+    margin-top: 10px;
+  }
+  .input_studentLogin {
+    margin-bottom: 50px;
+    margin-top: 30px;
+    width: 100%;
+    height: 100px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.16);
+    border: solid 8px #f9d44d;
+    background-color: #ffffff;
+    font-family: 'Kodchasan';
+    font-size: 5rem;
+    font-weight: bold;
+    color: #393939;
+  }
+  .loginStd h2 {
+    font-size: 2.5rem;
+  }
+  .loginStd h3 {
+    font-size: 1.6rem;
+  }
+  .loginStd h1 {
+    font-size: 3.3rem;
+  }
+  .btn-loginStd {
+    font-size: 2.25rem !important;
+  }
+  .btn-logoutStd {
+    font-size: 2.25rem !important;
+  }
+  .btn-nextStd {
+    font-size: 2.25rem !important;
+  }
+  .input_studentLoginShow {
+    margin-bottom: 100px;
+  }
+}
+
+/*ipad size*/
+@media only screen
+and (min-device-width : 768px)
+and (max-device-width : 1024px) {
+  .userShowIcon img {
+    margin-top: -90px;
+  }
+  .input_studentLoginShow {
+    height: auto;
+  }
+  .input_studentLoginShow p {
+    padding-top: 30px;
+  }
+}
+

@@ -1,22 +1,22 @@
-@extends('layouts.appstudent')
+@extends('layouts.appstudentExercise')
 @section('content')
   <style>
     body {
-      font-family: 'Kodchasan', sans-serif;
       background-color: #FCFBF5;
       background-image: url(/../img/exercise_bg.png);
-      background-repeat: no-repeat;
-      background-position: 0px 0px;
-      background-size: 100% auto;
     }
 
     .functitle {
       width: 100%;
-      height: 900px;
+      height: 850px;
       box-shadow: 0 0 99px 0 rgba(0, 0, 0, 0.08);
       border-left: solid 20px #3ebbae;
       border-right: solid 20px #3ebbae;
-      background-color: #FCFFFF;
+      background-color: #fcfbf5;
+    }
+
+    .functitle h1 {
+      margin-top: 100px;
     }
 
     .excersiceType {
@@ -24,11 +24,8 @@
     }
 
     .categories_list_padding {
+      padding: 0px 0px;
       padding-top: 60px;
-    }
-
-    .functitle h1 {
-      margin-top: 80px;
     }
 
     button:focus {
@@ -39,18 +36,10 @@
       display: none;
     }
 
-    img.blackBoard {
-      margin-top: -150px;
-      position: relative;
-      width: 1510px;
-    }
     a:not([href]):not([tabindex]) {
       color: #ffffff;
     }
-    .categories_list_padding {
-      padding: 0px 80px;
-      padding-top: 60px;
-    }
+
     .exerciseset {
       width: 100%;
       height: 145px;
@@ -58,30 +47,18 @@
       border: solid 10px #ffffff;
       background-color: #ffffff;
     }
-    .exerciseset h2 {
-      font-family: 'Kodchasan';
-      font-size: 48px;
-      font-weight: bold;
-      color: #464c51;
+
+
+
+    .slick-prev {
+      left: -165px !important;
     }
-    .circleStar {
-      float: left;
-      width: 145px;
-      height: 145px;
-      background-color: #edeff0;
-      border: solid 10px #e2e2e2;
-      border-radius: 100px;
-      position: relative; margin-top: -15px;
-      margin-left: -25px;
+
+    .slick-next {
+      right: -165px !important;
     }
-    .btn-start {
-      width: 353.3px;
-      height: 126.4px;
-      border-radius: 76px;
-      box-shadow: 0 10px 10px 0 rgba(0, 0, 0, 0.16);
-      border: solid 10px #ffffff;
-      background-color: #3ebbae;
-    }
+
+
     .bbg {
       /*width: 100%;*/
       /*height: 110px;*/
@@ -106,33 +83,46 @@
             <div class="categories_list_padding">
               <div class="excersiceType">
                 <div class="col-md-12">
-                  <div class="categories_list_padding">
+                  <div class="categories_list_paddingt0">
+                    <input type="hidden" id="countV" value="{{$exercises -> count()}}" onchange>
                     <div class="vertical">
-                                              @if(count($exercises) > 0)
-                                                @foreach($exercises as $exercise)
+                      @if(count($exercises) > 0)
+                        @foreach($exercises as $key => $exercise)
 
-                      <div class="col-md-12 ">
-                        <div class="text-center">
-                          <div class="btn exerciseset mb-4 box-shadow">
-                            <div class="row">
+                          <div class="col-md-12 ">
+                            <div class="text-center">
+                              <div class="btn exerciseset mb-4 box-shadow">
+                                <div class="row">
 
-                              <div class="col-md-2">
-                                <div class="circleStar"></div>
-                              </div>
-                              <div class="bbg col-md-6">
-                                <h2>{{$exercise->exercise_name}}</h2>
-                              </div>
-                              <div class="col-md-4 " style="position: relative; margin-top: -8px;margin-left: -25px;">
-                                <a href="#"><button class="btn btn-start" >เริ่มทำ</button></a>
+                                  <div class="col-md-2">
+                                    <div class="circleStar" id="circleStar_{{$key}}">
+                                      <input type="hidden" id="percentage_{{$key}}" value="{{$exercise->percentage}}">
+                                      @if($exercise->percentage != null )
+
+                                        <div id="emoji_{{$key}}"></div>
+
+                                      @elseif($exercise->percentage == '')
+                                        <i class="fas fa-star"></i>
+                                      @endif
+                                    </div>
+                                  </div>
+                                  <div class="bbg col-md-6">
+                                    <h2>{{$exercise->exercise_name}}</h2>
+                                  </div>
+                                  <div class="col-md-4 "
+                                       style="position: relative; margin-top: -8px;margin-left: -25px;">
+                                    <a href="/exercises/type2/{{$exercise->id}}">
+                                      <button class="btn btn-start">เริ่มทำ &nbsp; <i class="fas fa-arrow-right"></i>
+                                      </button>
+                                    </a>
+                                  </div>
+                                </div>
+
+
                               </div>
                             </div>
 
-
-
                           </div>
-                        </div>
-
-                      </div>
 
                         @endforeach
                       @else
@@ -150,10 +140,38 @@
       </div>
     </div>
 
-  <div class="text-center">
-    <img class="blackBoard" src="/../img/blackboard.png" alt="">
-  </div>
+    <div class="text-center">
+      <img class="blackBoard" src="/../img/blackboard.png" alt="">
+    </div>
 
   </div>
+
+  <script !src="">
+
+    var countV = document.getElementById("countV");
+    var count = countV.value;
+    // console.log(countV);
+    console.log(count);
+
+    for (var i = 0; i < count; i++) {
+      var percentage = document.getElementById("percentage_" + i);
+      var percent = percentage.value;
+      var emoji = document.getElementById("emoji_" + i);
+      var circleStar = document.getElementById("circleStar_" + i)
+      console.log(percent);
+      console.log(circleStar);
+
+      if (percent >= 70) {
+        circleStar.classList.add("circleGreen");
+        emoji.innerHTML = "<i class=\"fas fa-grin-stars\"></i>";
+      } else if (percent >= 40) {
+        circleStar.classList.add("circleYellow");
+        emoji.innerHTML = "<i class=\"fas fa-smile\"></i>";
+      } else if (percent > 0) {
+        circleStar.classList.add("circleRed");
+        emoji.innerHTML = "<i class=\"fas fa-frown\"></i>";
+      }
+    }
+  </script>
 
 @endsection
