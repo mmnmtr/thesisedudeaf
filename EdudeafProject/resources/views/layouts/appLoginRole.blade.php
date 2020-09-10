@@ -45,7 +45,7 @@
       }
     }
     else if (width > 1025 || height < 1025) {
-      console.log('่โขว์;;;')
+      console.log('่โขว์;;;สสสสสสส')
     }
   }
 </script>

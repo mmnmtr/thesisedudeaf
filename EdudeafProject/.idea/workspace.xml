@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f1dedf0e-4ef6-4353-b0cf-d201a753e8ab" name="Default Changelist" comment="" />
+    <list default="true" id="f1dedf0e-4ef6-4353-b0cf-d201a753e8ab" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/resources/views/layouts/appLoginRole.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/appLoginRole.blade.php" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -12,6 +14,9 @@
     <execution>
       <executable />
     </execution>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
   <component name="PhpWorkspaceProjectConfiguration">
     <include_path>
@@ -82,6 +87,7 @@
       <path value="$PROJECT_DIR$/vendor/fzaninotto/faker" />
       <path value="$PROJECT_DIR$/vendor/symfony/event-dispatcher" />
       <path value="$PROJECT_DIR$/vendor/mtdowling/cron-expression" />
+      <path value="$PROJECT_DIR$/vendor/realrashid/sweet-alert" />
     </include_path>
   </component>
   <component name="ProjectId" id="1WIyAsB2s8gpwH4BezfmPmSAp5n" />
@@ -189,6 +195,7 @@
       <workItem from="1583949489761" duration="1462000" />
       <workItem from="1583999142444" duration="12088000" />
       <workItem from="1584071468363" duration="7411000" />
+      <workItem from="1599732991809" duration="6000" />
     </task>
     <servers />
   </component>
